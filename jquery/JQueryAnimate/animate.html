@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <script src="./jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
+    
+    <script>
+        $(document).ready(
+            function(){
+                
+          $('.btn').click.index(0)(
+                       function(){
+                            $('img').animate({
+                        left:'500',
+                        
+                    })
+                        }
+                    )
+                //    $('.btn').click.index(1)(
+                //     function(){
+                //         $('img').animate({
+                //             left:'0'
+                //         })
+                //     }
+                //    )
+                }
+            )
+        
+    </script>
+    <style>
+        img{
+            position: relative;
+        }
+    </style>
+<body>
+    <!-- <button class="btn2">Click</button> -->
+    <button class="btn">Click</button>
+<img src="/image/charlie.jpg" width="100px" height="100px" alt="">
+</body>
+</html>

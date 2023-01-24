@@ -1,0 +1,427 @@
+.body1{
+    background-color: white;
+    padding-bottom: 50px;
+}
+.body1 .shop{
+  float: right;
+  padding-right: 10%;
+
+}
+
+.body1 .search{
+    float: left;
+    padding-left: 15%;
+}
+
+.search .market{
+    font-size: larger;
+    font-weight: bolder;
+    color: red
+
+}
+
+.easy .free{
+    color: gray;
+    font-weight: bolder;
+}
+
+.search .sign{
+    color: white;
+    display: inline-block;
+    border: 1px solid green;
+    background-color: green;
+    width: 40%;
+    height: 10%;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.search .sign a{
+    color: white;
+    font-weight: bolder;
+    
+}
+
+div .bp{
+    display: block;
+    text-align: center;
+    padding-top: 50px;
+    color: rgb(160, 222, 135);
+    font-weight: bolder;
+}
+
+div .bp .B{
+    color: red;
+}
+
+.con{
+    display: grid;
+    background-color: white;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    max-width: 100%;
+    margin: 50px;
+    max-height: 100%;
+    gap: 20px;
+    }
+
+.item-1{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+.item-1 .b1{
+    display:block;
+    max-width: 100%;
+    max-height: 100%; 
+    background:linear-gradient(80deg, black, brown, purple);
+    align-items: center;
+    color: rgb(0, 10, 10);
+
+}
+
+ .circle{
+     background-color: white;
+     height: 220px;
+     width: 220px;
+    border-radius: 50%;
+    border-width: 10px;
+    margin-left: 80px;
+} 
+
+
+.item-1 .b1 img{
+    display: inline-block;
+    align-items: center;
+    margin: 30px;
+}
+
+
+.item-1 .b1 a .tri{
+    font-size: large;
+    font-weight: bolder;
+    color: black;   
+   float: right;
+    margin-top: -60px;
+    padding-right: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+
+.item-1 .stand{
+    display: block;
+    max-width: 100%;
+    max-height: 50%;
+    background-color:whitesmoke;
+    color:black ;
+    padding: 65px;
+    padding-top:0px;
+    padding-left: 10px;
+   
+
+}
+
+.stand .tristand{
+    color: green;
+}
+
+.stand .price{
+    color: grey;
+}
+
+.stand .amount{
+    color: red;
+}
+
+.item-2{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.item-2 .b2{
+    display: block;
+    max-width: 100%;
+    max-height: 50%;
+    background: linear-gradient(90deg, rgb(29, 65, 39),white, rgb(124, 87, 87));
+    color: rgb(0, 10, 10);
+
+}
+.circle2{
+    background-color: white;
+    height: 220px;
+    width: 220px;
+   border-radius: 50%;
+   border-width: 10px;
+   margin-left: 80px;
+}
+
+
+.item-2 .b2 img{
+    display: inline-block;
+    margin: 30px;
+}
+
+.item-2 .b2 a .cera{
+    font-size: larger;
+    font-weight: bolder;
+    color: black;
+    float: right;
+    margin-top: -60px;
+    padding-right: 20px;
+    
+}
+
+.item-2 .ve{
+    display: block;
+    max-width: 100%;
+    max-height: 50%;
+    background-color:whitesmoke;
+    color:black ;
+    padding: 65px;
+    padding-top:0px;
+    padding-left: 10px;
+   
+
+}
+
+
+.ve .cerave{
+    color: green;
+}
+
+.ve .price{
+    color: grey;
+}
+
+.ve .amount{
+    color: red;
+}
+
+.item-3{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.item-3 .b3{
+    display: block;
+    max-width: 100%;
+    max-height: 50%;
+    background: linear-gradient(90deg, rgb(31, 65, 29), rgb(59, 148, 15), rgb(242, 141, 10));
+    color: rgb(0, 10, 10);
+
+}
+
+.circle3{
+    background-color: white;
+    height: 220px;
+    width: 220px;
+   border-radius: 50%;
+   border-width: 10px;
+   margin-left: 80px;
+}
+
+
+
+.item-3 .b3 img{
+    display: inline-block;
+    padding-top: 40px;
+    padding-left: 0px;
+}
+
+.item-3 .b3 a .hair{
+    font-size: larger;
+    font-weight: bolder;
+    color: black;
+    float: right;
+    margin-top: -60px;
+    padding-right: 10px;
+}
+
+.item-3 .ve{
+    display: block;
+    max-width: 100%;
+    max-height: 50%;
+    background-color: whitesmoke;
+    color:black ;
+    padding: 65px;
+    padding-top:0px;
+    padding-left: 10px;
+   
+
+}
+
+.item-4{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.item-4 .b4{
+    display: block;
+    max-width: 100%;
+    max-height: 50%;
+    background: linear-gradient(40deg, gray, white, pink);
+    color: rgb(0, 10, 10);
+
+}
+
+.circle4{
+    background-color: white;
+    height: 220px;
+    width: 220px;
+   border-radius: 50%;
+   border-width: 10px;
+   margin-left: 80px;
+}
+
+
+.item-4 .b4 img{
+    display: inline-block;
+    padding-left: 35px;
+    padding-top: 10px;
+}
+
+.item-4 .b4 a .john{
+    font-size: larger;
+    font-weight: bolder;
+    color: black;
+    float: right;
+    margin-top: -60px;
+    padding-right: 10px;
+    
+    
+}
+
+.item-4 .ve{
+    display: block;
+    max-width: 100%;
+    max-height: 50%;
+    background-color: whitesmoke;
+    color:black ;
+    padding: 65px;
+    padding-top:0px;
+    padding-left: 10px;
+   
+
+}
+
+.item-5{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.item-5 .b5{
+    display: block;
+    max-width: 100%;
+    max-height: 50%;
+    background: linear-gradient(90deg, black, pink, blue);
+    color: rgb(0, 10, 10);
+
+}
+
+.circle5{
+    background-color: white;
+    height: 220px;
+    width: 220px;
+   border-radius: 50%;
+   border-width: 10px;
+   margin-left: 80px;
+}
+
+.item-5 .b5 img{
+    display: inline-block;
+    padding: 10px;
+}
+
+.item-5 .b5 a .cantu{
+    font-size: larger;
+    font-weight: bolder;
+    color: black;
+    float: right;
+    margin-top: -50px;
+    padding-right:20px;
+    
+    
+}
+
+.item-5 .ve{
+    display: block;
+    max-width: 100%;
+    max-height: 50%;
+    background-color: whitesmoke;
+    color:black ;
+    padding: 65px;
+    padding-top:0px;
+    padding-left: 10px;
+   
+
+}
+
+.item-6{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.item-6 .b6{
+    display: block;
+    max-width: 100%;
+    max-height: 50%;
+    background: linear-gradient(90deg, yellow, gold, green);
+    color: rgb(0, 10, 10);
+
+}
+
+.circle6{
+    background-color: white;
+    height: 220px;
+    width: 220px;
+   border-radius: 50%;
+   border-width: 10px;
+   margin-left: 80px;
+}
+
+.item-6 .b6 img{
+    display: inline-block;
+    padding: 20px;
+}
+
+.item-6 .b6 a .olay{
+    font-size: larger;
+    font-weight: bolder;
+    color: black;
+    float: right;
+    margin-top: -50px;
+    padding-right:20px;
+    
+}
+
+.item-6 .ve{
+    display: block;
+    max-width: 100%;
+    max-height: 50%;
+    background-color: whitesmoke;
+    color:black ;
+    padding: 65px;
+    padding-top:0px;
+    padding-left: 10px;
+   
+
+}
+ .con img{
+margin: 5%;
+} 
+.lorem{
+    color: rgb(59, 121, 198);
+}
+.lorem .des{
+    color: red;
+}

@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ol>
+        <li>Manchester United</li>
+        <li class="cl">Real Madrid</li>
+        <li>Chelsea</li>
+        <li>Liverpool</li>
+        <li>Barcelona</li>
+    </ol>
+    <script>
+       let clubs = document.querySelectorAll('ol li.cl')
+    //    clubs[0].style.color = 'red'
+    //    clubs[0].style.fontSize = '60px'
+       
+        clubs.forEach(club=>{
+            
+            console.log(`${club.innerHTML}`)
+            document.writeln(`${club.innerHTML}</br>`)
+            
+        })
+        
+        for( let mycl of clubs){
+            document.writeln(`${mycl.innerHTML}</br>`)
+        }
+
+    </script>
+</body>
+</html>

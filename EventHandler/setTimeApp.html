@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function setTimeApp(){
+        setTimeout(function(){
+            alert('I am Charles')
+        }
+        , 2000);
+    }
+    function setTimeInt(){
+        setInterval(function(){
+            alert ('I am Pharrell')
+        }
+        ,3000)
+
+    }
+    </script>
+    <button ondblclick="setTimeInt()">Go</button>
+    <button ondblclick="setTimeApp()">Go</button>
+    
+</body>
+</html>

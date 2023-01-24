@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <select name="" id="list" onchange="getSelect()">
+        <option value="select">select Items</option>
+        <option value="milo">milo</option>
+        <option value="milk">milk</option>
+        <option value="bread">bread</option>
+    </select>
+
+    <script>
+        let Items =                
+            milo = {
+                name: 'milo',
+                price: 2000
+            },
+            milk ={
+                name: 'milk',
+                price: 1400
+            },
+            bread ={
+                name: 'bread',
+                price: 1300
+            } 
+        function getSelect(){
+            let selectedvlaue = document.getElementById('list').value
+            if(selectedvlaue === 'milk'){
+                // varItem.push = Number(milk.price)
+            let labe = document.createElement('label')
+            let spa = document.createElement('span')
+            let brr = document.createElement('br')
+            document.body.appendChild(brr)
+            labe.innerText = `${milk.name}:  `
+            spa.innerHTML = milk.price
+            document.body.appendChild(labe)
+            document.body.appendChild(spa)
+            let br = document.createElement('br')
+            document.body.appendChild(br)
+            }
+            else if(selectedvlaue === 'milo'){
+                let label = document.createElement('label')
+                let span = document.createElement('span')
+                let br = document.createElement('br')
+                document.body.appendChild(br)
+                label.innerText = `${milo.name}: `
+                span.innerText = `${milo.price}`
+                document.body.appendChild(label)
+                document.body.appendChild(span)
+                let brr = document.createElement('br')
+                document.body.appendChild(brr)
+
+            }
+            else if(selectedvlaue === 'bread'){
+                let label = document.createElement('label')
+                let span = document.createElement('span')
+                let br = document.createElement('br')
+                document.body.appendChild(br)
+                label.innerText = `${bread.name}: `
+                span.innerText = `${bread.price}`
+                document.body.appendChild(label)
+                document.body.appendChild(span)
+                let brr = document.createElement('br')
+                document.body.appendChild(brr)  
+            }
+        }
+    </script>
+</body>
+</html>

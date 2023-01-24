@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .form{
+            display: block;
+            text-align: center;
+            background-color: brown;
+            padding-top: 20%;
+            height: 100vh;
+            font-weight: bolder;
+
+            
+        }
+        input{
+            color: blue;
+            font-weight: bolder;
+            text-align: center;
+        }
+        input #kg{
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+            <h1>BMI Calculator</h1>
+        <!-- <label for="kg">Mass</label>
+        <input type="text" name="kg" id="kg"><br><br>
+        <label for="hgt">Height</label>
+        <input type="text" name="hgt" id="hgt"><br><br>
+        <button id="butt">Submit</button>
+        <div id="char">  </div> -->
+
+       Mass: <input type="text" name="kg" id="kg"><br><br>
+       Height <input type="text" name ="hgt" id="hgt"><br><br>
+       
+       <button onclick="calc()">Submit </button>
+       <div id="char"></div>
+      
+       
+   </div> 
+  
+
+   <script>
+       function calc(){
+       let mass = Number(document.getElementById('kg').value)
+       let height = Number(document.getElementById('hgt').value)
+       let BMI = mass/height**2
+    //    document.writeln(BMI)
+       
+       if (BMI<18.5){
+        //    document.writeln(`With a BMI of ${BMI},`)
+        document.getElementById('char').innerHTML=" you are clearly underweight"
+        }
+           else if( BMI >= 18.5 &&  BMI <25){
+            //    document.writeln(`With a BMI of ${BMI}, `)
+            document.getElementById('char').innerHTML="your weight is normal and you are healthy"
+
+           }
+           else if (BMI >25){
+            //    document.writeln(`With a BMI of ${BMI}, you are clearly overweight`)
+               document.getElementById('char').innerHTML=" you are clearly overweight"
+            }
+            else if(mass && height ===' '){
+                document.getElementById('char').innerHTML="This is an error"
+            }
+            else
+            document.getElementById('char').innerHTML="This is an error"
+
+           
+       }
+    
+   </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        Principal: <input type="text" name = 'pr' id="pr"><br>
+        Rate: <input type="text" name = 'rt' id="rt"><br>
+        Time: <input type="text" name = 'tm' id="tm"><br>
+        <input type="submit" onclick="calc()"  value="submit">
+
+    </form>
+
+    <script>
+        function  calc(){
+            var pr = Number(document.getElementById('pr').value)
+            var rate = Number(document.getElementById('rt').value)
+            var time = Number(document.getElementById('tm').value)
+            var si = (pr*rate*time)/100;
+            document.writeln(si)
+
+        }
+    </script>
+</body>
+</html>

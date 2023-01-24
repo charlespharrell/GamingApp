@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+  <div class="info">My info</div>
+  <script>
+   
+    localStorage.setItem('name', 'Jane Doe')
+    let empName = localStorage.getItem('name')
+    // localStorage.setItem('age', '23')
+    localStorage.setItem('gender','male')
+    document.writeln(empName)
+    let empAge = localStorage.getItem('age')
+    document.writeln(empAge)
+    let empGen = localStorage.getItem('gender')
+    document.writeln(empGen)
+    // localStorage.removeItem('gender')
+    let totalVal = localStorage.length
+    document.writeln(totalVal)
+    
+  </script>
+</body>
+</html>

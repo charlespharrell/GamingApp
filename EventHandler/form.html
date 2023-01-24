@@ -1,0 +1,349 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 50%;
+            max-width: 100%;
+            background-color:gray;
+            padding: 20px;
+            margin: 20px auto;
+        }
+        label.label{
+            font-weight: bold;
+            font-size: large;
+            color: white;
+        }
+        input::placeholder{
+            color: white;
+        }
+        .names{
+            margin-bottom: 0px;
+        }
+        .name{
+            float: left;
+            width: 50%;
+            margin-bottom: 20px;    
+                   
+        }
+        .surnname{
+            float:right;
+            width: 50%;
+            margin-bottom: 20px;
+            
+        }
+        .age{
+            float: left;
+            width: 50%;
+            margin-bottom: 20px;                  
+        }
+        .add{
+            float:right;
+            width: 50%;
+            margin-bottom: 20px;
+        }
+        .gender{
+            float: left;
+            width: 50%;
+            margin-bottom: 20px;          
+        }
+        .state{
+            float:right;
+            width: 50%;
+            margin-bottom: 20px;
+        }
+        .position{
+            float: left;
+            width: 50%;
+            margin-bottom: 20px;          
+        }
+        .salary{
+            float:right;
+            width: 50%;
+            margin-bottom: 20px;
+        }
+        button{
+            color: blue;
+            padding: 10px;
+            font-weight: bold;
+        }
+        #name{
+            border: none;
+            outline: none;
+            background-color:  gray;;
+            border-bottom: 1px solid white;
+            margin-top: 10px;
+            color: white;
+        }
+        #surnname{
+            border: none;
+            outline: none;
+            background-color:  gray;;
+            border-bottom: 1px solid white;
+            margin-top: 10px;
+            color: white;
+        }
+        #age{
+            border: none;
+            outline: none;
+            background-color:  gray;;
+            border-bottom: 1px solid white;
+            margin-top: 10px;
+            color: white;
+        }
+        #address{
+            border: none;
+            outline: none;
+            background-color:  gray;;
+            border-bottom: 1px solid white;
+            margin-top: 10px;
+            color: white;
+        }
+        #gender{
+            border: none;
+            outline: none;
+            background-color:  gray;;
+            border-bottom: 1px solid white;
+            margin-top: 10px;
+            width: 170px;
+            color: white;
+        }
+        #state{
+            border: none;
+            outline: none;
+            background-color:  gray;;
+            border-bottom: 1px solid white;
+            margin-top: 10px;
+            width: 170px;
+            color: white;
+        }
+        #position{
+        border: none;
+            outline: none;
+            background-color:  gray;;
+            border-bottom: 1px solid white;
+            margin-top: 10px;
+            width: 170px;
+            color: white;
+         }
+        #salary{
+            border: none;
+            outline: none;
+            background-color: gray;;
+            border-bottom: 1px solid white;
+            margin-top: 10px; 
+            color: white;
+        } 
+           
+       label{
+        margin-inline: 10px;
+        color: blue;
+       } 
+       span{
+        color: rgb(79, 75, 75);
+        font-weight: bolder;
+       }
+
+       #table {
+        display: none; 
+       text-align: center;
+        width: 50%;
+       }
+       td{
+        padding: 20px;
+       }
+       th:nth-child(even){
+        background-color: gray;
+        padding: 40px;
+       }
+       th:nth-child(odd){
+        background-color: rgb(115, 147, 147);
+        padding: 40px;
+       }
+       td:nth-child(even){
+        background-color: gray;
+        padding: 20px;
+       }
+       td:nth-child(odd){
+        background-color: rgb(115, 147, 147);
+        padding: 20px;
+       }
+      .total{
+        color: blue;
+        font-weight: bold;
+      }
+      
+      .sal div:nth-child(odd)
+        {
+    background-color: gray;
+    }    
+    .sal div:nth-child(even){
+        background-color: blue;
+    }
+    #sall{
+        text-align: center;
+        display: none;
+    }   
+        </style>
+</head>
+<body>
+    <div class="container">
+    <div class="names">
+        <div class="name">
+            <label for="name" class="label">Name</label><br>
+        <input type="text" id="name" placeholder="Name" required><br><br>
+        </div>
+        <div class="surnname">
+            <label for="surnname" class="label">Surnname</label><br>
+            <input type="text" id="surnname" placeholder="Surnname" required><br><br>
+        </div>              
+    </div>
+    <div class="ages">
+        <div class="age">
+            <label for="age" class="label">Age</label><br>
+            <input type="number" id="age" class="name" placeholder="Age" required><br><br>
+        </div>
+        <div class="add">
+        <label for="address" class="label">Address</label><br>
+        <input type="text" id="address" class="name" placeholder="Address" required><br><br>
+        </div>             
+            </div>
+        <div class="genes">
+            <div class="gender">
+                <label for="gender" class="label">Gender</label><br>
+        <select name="gender" id="gender" required>
+            <option value="">Gender</option>
+            <option value="Male">male</option>
+            <option value="Female">female</option>
+        </select><br><br>
+            </div>
+            <div class="state">
+                <label for="address" class="label">State</label><br>
+        <select name="state" id="state" required>
+            <option value="">State</option>
+            <option value="Imo">imo</option>
+            <option value="Anambra">anambara</option>
+        </select><br><br>
+            </div>       
+        </div>
+        <div class="post">
+            <div class="position">
+                <label for="address" class="label">Position</label><br>
+                <select name="position" id="position" required>
+                    <option value="">Position</option>
+                    <option value="Manager">manager</option>
+                    <option value="CEO">ceo</option>
+                </select><br><br>
+            </div>
+           <div class="salary">
+            <label for="salary" class="label">Salary</label><br>
+            <input type="number" id="salary" class="name" placeholder="Salary" required><br><br>
+            </div>
+        </div>
+        <button id="btn" >submit</button>
+    </div> <br> 
+
+    <table id="table">
+        <tr>
+            <th id="th-name"></th>
+            <th id="th-surnname"></th>
+            <th id="th-age"></th>
+            <th id="th-gender"></th>
+            <th id="th-state"></th>
+            <th id="th-address"></th>
+            <th id="th-position"></th>
+            <th id="th-salary"></th>
+        </tr>         
+        <tr>
+            <td id="t_name">1</td>
+            <td id="t_surnname">2</td>
+            <td id="t_age">3</td>
+            <td id="t_gender">4</td>
+            <td id="t_state">5</td>
+            <td id="t_address">6</td>
+            <td id="t_position">7</td>
+            <td id="t_salary">8</td>       
+        </tr>
+    </table><br><br>
+   
+    <table id="sall">
+        <tr>
+            <th class="housing">Housing</div>
+                <th class="health">Health</div>
+                <th class="feeding">Fedding</div>
+                <th class="utilities">Utilities</div>
+        </tr>
+       <tr>
+        <td id="Hcost">1</div>
+            <td id="Healthcost">2</div>
+            <td id="feedcost">3</div>
+            <td id="utilcost">4</div>
+       </tr>
+    </div>
+    <script>      
+        btn.addEventListener('click', function(){
+        table = document.getElementById('table')
+        table.style.display = 'inline-block'
+        sall = document.getElementById('sall')
+        sall.style.display = 'inline-block'
+        housing = document.getElementById('Hcost')
+        health = document.getElementById('Healthcost')
+        feed = document.getElementById('feedcost')
+        utlity = document.getElementById('utilcost')
+
+        let thname = document.getElementById('th-name')
+        let thsurnname = document.getElementById('th-surnname')
+        let thage = document.getElementById('th-age')
+        let thgender = document.getElementById('th-gender')
+        let thstate = document.getElementById('th-state')
+        let thaddress = document.getElementById('th-address')
+        let thposition = document.getElementById('th-position')
+        let thsalary = document.getElementById('th-salary')
+        
+        let t_name = document.getElementById('t_name')
+        let t_surnname= document.getElementById("t_surnname")
+        let t_age = document.getElementById('t_age')
+        let t_gender = document.getElementById('t_gender')
+        let t_address = document.getElementById('t_address')
+        let t_state = document.getElementById('t_state')
+        let t_position = document.getElementById('t_position')
+        let t_salary = document.getElementById('t_salary')
+
+        let name = document.getElementById('name').value
+        let surnname = document.getElementById('surnname').value
+        let age = document.getElementById('age').value
+        let gender = document.getElementById('gender').value
+        let state = document.getElementById('state').value
+        let address = document.getElementById('address').value
+        let position = document.getElementById('position').value
+        let salary = document.getElementById('salary').value
+
+        thname.innerText = `Name`
+        thsurnname.innerText = `Surnname`
+        thage.innerText =`Age`
+        thgender.innerText =`Gender`
+        thstate.innerText =`State`
+        thaddress.innerText =`Address`
+        thposition.innerText = `Position`
+        thsalary.innerText = `Salary`
+
+        t_name.innerText = name
+        t_surnname.innerText = surnname
+        t_age.innerText = age
+        t_gender.innerText = gender
+        t_state.innerText = state
+        t_address.innerText = address
+        t_position.innerText = position
+        t_salary.innerText = salary
+
+         housing.innerText = `${(30/100 *salary).toFixed(2)}`
+         health.innerText =` ${(20/100 * salary).toFixed(2)}`
+         feed.innerText = `${(30/100 * salary).toFixed(2)}`
+         utlity.innerText =` ${(20/100 * salary).toFixed(2)}`                           
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <script src="./jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
+    
+    <script>
+        $(document).ready(
+           function(){
+            $('.start').click(
+                function(){
+                    $('img').animate({ left:'+300px'},5000)
+                    
+                }
+            );
+
+            $('.stop').click(
+                function(){
+                    $('img').stop()   
+                }
+            );
+
+            $('.back').click(
+                function(){
+                    $('img').animate({ left:'-=300'},5000)    
+                }
+            );
+
+            $('.reset').click(
+                function(){
+                    $('img').animate({ left:'0'}, 'fast')                   
+                }
+            );
+           }
+        )
+    </script>
+    <style>
+        img{
+            position: relative;
+        }
+    </style>
+<body>
+   <button class="start">Start</button>
+   <button class="stop">Stop</button>
+   <button class="back">Back</button>
+   <button class="reset">Reset</button>
+   <p><img src="/image/charlie.jpg" width="100px" height="100px" alt=""></p>
+</body>
+</html>

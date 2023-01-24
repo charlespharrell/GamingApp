@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello world</h1>
+
+    <p>Lorem ipsum dolor sit.</p>
+    <p class="class">lorem what are your doing</p>
+    <p> i am expecting you to be the best web developer</p>
+     <div class="content">
+        <p class="call">call me now</p>
+     </div>
+
+     <script>
+        //  const paras = document.querySelectorAll('p')
+
+        //  console.log(paras.innerHTML)
+        //  paras.innerHTML = 'i am charles pharrell' 
+        //  console.log(paras.innerText)
+        //  paras.forEach(para=>{
+        //      console.log(para.innerText) 
+        //      para.innerText += ' you are a charmer'
+        //  })
+
+         const good = document.querySelector('.content')
+         console.log(good.innerHTML)
+         good.innerHTML += '<h2> This is Pharrell Udenwoke</h2>'
+         console.log(good.innerHTML)
+
+         const people = ['charles', 'pharrell', 'udenwoke']
+         people.forEach(person=>{
+             good.innerHTML +=`<p>${person}</p>`
+         })
+     </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <body>
+            <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+            <script src="./jquery.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
+            <script>
+                $(document).ready(
+                    function(){
+
+                 $('select')
+                 .change(function(){
+                    let selOpt = $(this).find(":selected").val();
+                    alert('You have selected ------' + selOpt);
+                    
+                 })
+                }
+                )
+            </script>
+            <style>
+                
+            </style>
+        </head>
+        <body>
+            <label for="">City</label>
+            <select name="" id="">
+                <option value="London">London</option>
+                <option value="Paris">Paris</option>
+                <option value="NewYork">NewYork</option>
+            </select>
+        </body>
+        </html>
+        </body>
+        </html>

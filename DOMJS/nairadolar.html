@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Currency converter</h1>
+<div class="exchange">
+    Amount <br><br>
+    From <br>
+    Nigeria Naira: <input type="number" id="naira" > <br><br>
+    To <br>
+    Malaysian Ringgit: <input type="number" id="ringgit" ><br><br>
+    To <br>
+    US dollar: <input type="number" id="dollar" > <br><br>
+    <!-- <button id="btn">Convert</button> -->
+
+</div>
+<script>
+naira.addEventListener('input', function(){
+    let btn = document.getElementById('btn')
+    let naira = document.querySelector('#naira').value;
+    let ringgit = document.querySelector("#ringgit");
+    let dollar = document.querySelector('#dollar');
+    ringgit.value = naira/100;
+    dollar.value = naira/413;
+
+    let labell = document.createElement('label')
+    let br = document.createElement('br')
+    document.body.appendChild(br)
+    let label2 = document.createElement('label')
+    let input = document.createElement('input')
+    let brr = document.createElement('br')
+    document.body.appendChild(brr)
+    labell.innerText = 'To';
+    label2.innerText = 'Euro';
+    input.value=` ${naira/500}`;
+    
+    document.body.appendChild(labell)
+    document.body.appendChild(label2)
+    document.body.appendChild(input)
+
+    // let break = document.create
+    // document.input.appendChild(input.innerText).value
+
+    
+
+    
+
+})
+</script>
+</body>
+</html>

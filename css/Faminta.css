@@ -1,0 +1,109 @@
+body{
+    background-color: white;
+}
+.faminta{
+    /* position: relative; */
+    display: block;
+    max-width: 100%;
+    width: 1800px;
+    height: 50px;
+    /* background-color: skyblue; */
+}
+.faminta h1{
+    display: inline-block;
+    font-size: 22px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.faminta ul{
+    position: absolute;
+    left: 420px;
+    top: 10px;
+    display: flex;
+    list-style-type: none;
+   
+}
+.faminta ul li a{
+    
+    display: inline-block;
+    text-decoration: none;
+    margin-inline-end: 20px;
+   
+    color: rgb(15, 9, 9);
+    
+}
+.grid-container{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    max-width: 100%;
+    max-height: 100vh;
+    background-color: rgb(253, 252, 253);
+
+}
+.grid-item {
+    height: 350px;
+    margin-top: 0px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1f 1fr ;
+    background-color: gainsboro;
+    
+
+}
+
+.body{
+    background-color: lightblue;
+    height: 300px;
+    max-width: 100%;
+    width: 1800px;
+    display: block;
+    position: relative;
+}
+.body .online{
+    display: inline-block;
+    position: absolute;
+    left: 250px;
+    margin: 100px;
+}
+.body .online .shop{
+    font-size: x-small;
+    cursor: pointer;
+}
+.body .online span{
+    font-size: xx-large;
+}
+.body .online span .hand{
+    color: green;
+}
+.body .online h3 a{
+    text-decoration: none;
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+    font-size: xx-small;
+    width: 60px;
+    height: 20px;
+    margin-top: 50px;
+    padding: 5px 15px;
+}
+.body .bag{
+    position: absolute;
+    left: 700px;
+    top: 20px;
+}
+.arrival .new{
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    position: absolute;
+    left: 400px;
+    
+}
+.arrival .new li a{
+    text-decoration: none;
+    margin-inline-end: 30px;
+    font-size: small;
+    color: black;
+
+}

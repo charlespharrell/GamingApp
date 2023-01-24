@@ -1,0 +1,192 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+body{
+    /* background-color: var(--primary-color); */
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+section{
+    display: none;
+}
+.fill{
+    position: absolute;
+    bottom: 100px;
+    left: 500px;
+    background-color: transparent;
+    width: 30%;
+    height: 100mvh;
+    border-radius: 0px;
+    border: 1px solid rgb(101, 91, 91);
+    padding: 30px;
+    display: inline-block;
+}
+.fill h3{
+    color: white;
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    margin-left: 13px;
+
+}
+.emailerr{
+    margin-bottom: 30px ;
+}
+.passerr{
+    margin-bottom: 30px ;
+}
+#error{
+    color: wheat;
+    margin-left: 15px;
+    display: none;
+}
+.form #email {
+    width: 20rem;
+    height: 3rem;
+    margin-left: 13px;  
+    background-color: transparent;
+    outline: none;
+    border: 1px solid gray;
+    color: white;
+
+}
+#perror{
+    color: wheat;
+    margin-left: 15px;
+    display: none;
+}
+.form #pass{
+    width: 20rem;
+    height: 3rem;
+    margin-left: 13px;
+   
+    background-color: transparent;
+    outline: none;
+    border: 1px solid gray;
+    color: white;
+}
+.form input[type ='submit']{
+    width: 20rem;
+    height: 3rem;
+    margin-left: 13px;
+    margin-bottom: 10px;
+}
+.form input[type ='submit']:hover{
+    background-color: rgb(125, 3, 3);
+}
+.form input[type ='checkbox']{
+    width: 20px;
+    height: 20px;
+    margin-top: -30px;
+    
+}
+.rem{
+    margin-top: -30px;
+    color: white;
+    font-size: smaller;
+}
+.new{
+    color: white;
+    margin-top: 0px;
+    margin-left: 17px;
+    font-size: smaller;
+}
+.sign{
+    font-size: small;
+    font-weight: bold;
+}
+#charles{
+    color: rgb(125, 3, 3);
+    /* position: absolute; */
+    font-size: 200px;
+
+    margin:150px auto;
+    margin-left: 90px;
+    position: relative; 
+    /* transition:1s;
+    animation-name: drive;
+    animation-duration: 4sec;
+    /* animation-fill-mode: forwards; */
+}
+#charles:hover{
+    transform: rotateX(360deg);
+    /* background-color:rgb(125, 3, 3); */
+    color: white;
+}
+@keyframes drive {
+    from{transform: translateX(0)}
+    to{transform: translateX(1300px);}
+}
+         .pha{
+            position: absolute;
+            top: 300px;
+            /* animation-name: drive;
+            animation-duration: 5s;
+            animation-fill-mode: both;
+            /* animation-delay: 2s; */
+            /* animation-iteration-count: infinite;
+            animation-timing-function: linear;  */
+            animation: drive 7s infinite both linear,
+                       jump 5s 3s infinite ease;
+        }
+        .pha2{
+           position: absolute;
+           animation-name: drive;
+           animation-duration: 5s;
+           animation-direction: reverse; 
+           animation-fill-mode: both;
+           animation-iteration-count: infinite;
+        }
+        @keyframes drive {
+            from{transform: translateX(-200px)}
+            to{transform: translateX(1400px)}
+        }
+        @keyframes jump {
+            0%{top: 300px}
+            50%{top: 10px}
+            100%{top: 300px}
+            
+        }
+        #signin {
+            margin-left: -1000px ;
+            animation: pop 8s ease forwards          
+            }
+         @keyframes pop{
+            0%{opacity: 0;}
+            /* 70%{transform: translateX(500px)} */
+            100%{transform: translateX(1050px); opacity: 1;}
+         }
+    </style>
+</head>
+<body>
+    <div id="signin">
+        <h1 id="charles">CharlesFlix</h1>
+        
+        <div class="fill">
+            <h3>Sign in</h3>
+        
+            <div class="form">
+                <div class="emailerr">
+                    <input type="email" id="email" class="fo" placeholder="Email" required>
+                   <div id="error">Please enter a valid email</div> 
+                </div>
+                <div class="passerr">
+                    <input type="password" id="pass"  class="fo" placeholder="Password" required>
+                    <div id="perror">Please enter a password</div>
+                </div>
+                <input type="submit" value="Sign In" id="sign" ><br>
+                <input type="checkbox" > <span class="rem">Remember me</span>
+                <div class="new">New to CharlesFlix? <span class="sign">Sign up now</span></div>
+            </div>
+        </div>
+    </div>
+    <img class="pha" src="/image/pha1.jpg " width="100px" height="100px" alt=""><br><br>
+    <img class="pha2" src="/image/pha2.jpg " width="100px" height="100px" alt="">
+</body>
+</html>

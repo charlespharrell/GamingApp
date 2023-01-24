@@ -1,0 +1,66 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+ </head>
+ <body>
+     <script>
+
+         let user = {
+             name: 'charles',
+             age: 23,
+            religin: 'christian',
+            sex: 'male',
+            names:['charles','emeka','pharrell'],
+            login(){
+                console.log('user just logged in')
+            },
+            logout(){
+                console.log('user just logged out')
+            },
+            lognames(){
+                // console.log(this.names)
+                this.names.forEach(mynames => {
+                    console.log(mynames)
+                });
+            }
+         }
+         user.login()
+         user.logout()
+         user.lognames()
+        //  this.religin
+        console.log(user.age)
+        console.log(user ["name"]) 
+        //  let user={
+
+        // name:'charles',
+        // age:27,
+        // gender: 'male',
+        // blog:['charles', 'pharrell', 'emeka'],
+        // login:function (){
+        //         document.writeln('The user just logged in');
+        //         console.log('The user just logged in')
+        //     },
+
+        //     logout:function(){
+        //         document.writeln('The user just logged out');
+        //         console.log('The user just logged out')
+        //     }
+        //  };
+        //  user.login();
+        //  user.logout();
+         
+        //  document.writeln(user['name'])
+        //  console.log(user.age);
+        //  document.writeln(user.age );
+        //  user.age = 36;
+        //  console.log(user.age);
+        //  document.writeln(user.age );
+        //  document.writeln(typeof user)
+
+     </script>
+ </body>
+ </html>

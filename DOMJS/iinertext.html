@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <script>
+            
+           
+        function passwordVal(){
+            let pwcount = document.regform.pw.value.length
+            
+            if(pwcount >=8){
+                errMsg = 'Good Password'
+            }
+            else{
+                errMsg = 'Poor Password'
+            }
+            document.getElementById('pwstr').innerText= errMsg
+        }
+       
+        cpw =''
+            pw=''
+        function passwordVerify(){
+            let cpw = document.regform.cpw.value
+            let pw = document.regform.pw.value
+           
+            if (pw === cpw){
+            
+            document.getElementById('verify').innerText = `correct`
+            
+        }
+        else{
+            document.getElementById('verify').innerText = `Please check your password`
+          
+            
+        }
+        
+
+        }
+        
+       
+
+        </script>
+        <form action="" name="regform">
+            username: <input type="text" name="txt"><br><br>
+            password: <input type="password" onkeypress="passwordVal()" name="pw"><br><br>
+            confirm password: <input type="password" name="cpw"><br><br>
+            Password strength: <span id="pwstr"> </span><br>
+            <button id="btn" onclick="passwordVerify()">Submit</button><br><br>
+            Passwod verification:  <span id="verify"> </span><br>
+        </form>
+    </body>
+    </html>
+</body>
+</html>

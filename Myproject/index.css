@@ -1,0 +1,169 @@
+body{
+    background: hsl(216, 12%, 8%);
+    text-align: center;
+}
+
+.container2{
+    background-color:  hsl(213, 19%, 18%);
+    display: none;
+    margin: 10% auto;
+    border-radius: 25px;
+    padding:0px 25px 30px 25px
+    
+    }
+    svg{
+        margin-top: 40px;
+    }
+    .select{
+        color: orange;
+        font-weight: bold;
+        display: inline-block;
+        border: 1px solid hsl(216, 14%, 14%);
+        background-color:hsl(216, 14%, 14%);
+        border-radius: 20px;
+        margin-top: 15px;
+        padding: 5px 20px
+    }
+    .thank{
+        margin-top: 20px;
+        font-weight: bold;
+        color: white;
+        font-size: x-large;
+    }
+    .we{
+        color: white;
+        margin-top: 20px;
+        font-size: small;
+    }
+
+.container{
+    margin: 10% auto;
+    width: 22%;
+    max-width: 100%;
+    display: inline-block;
+    background:  hsl(213, 19%, 18%);
+    padding: 20px;
+    border-radius: 25px;
+   
+}
+.svg{
+    background:hsl(216, 14%, 14%);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+svg{
+margin-top:10px ;
+}
+h1{
+    color: white;
+    text-align: left;
+}
+.please{
+    text-align: left;
+    color: white;
+    margin-bottom: 10px;
+}
+.circle{
+    margin: 0px auto;
+}
+.ones{
+    margin-top: 10px;
+    margin-left: 15px;
+}
+input[type ='radio']{
+    -webkit-appearance: none;
+}
+.one{
+    color: white;
+    background-color: hsl(216, 14%, 14%);;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-inline: 0px;
+    cursor: pointer;  
+}
+
+/* .one:active{
+    background-color: orange; 
+} */
+input[type ='radio']:checked + label{
+    background-color: orange;
+}
+div .one{
+    display: inline-flex;
+    margin-bottom: -10px;
+
+}
+ .one:hover{
+    background-color: orange;
+}
+
+
+#one{
+    text-align: center
+    ;
+}
+.rate{
+    text-align: center;
+    justify-content: center;
+}
+.sub{
+    color: orange;
+    font-weight: bold;
+    width: 93%;
+    background-color: white;
+    border: 1px solid white;
+   border-radius: 20px;
+   padding:10px 0px;
+   margin-top: 30px;
+   margin-bottom: 10px;
+   margin-right: 10px;
+
+}
+.sub:hover{
+    background-color: orange;
+    color: white;
+}
+#back{
+color: orange;
+background-color: hsl(216, 14%, 14%);
+display: inline-block;
+padding: 5px;
+border-radius: 10px;
+border: 1px solid hsl(216, 14%, 14%);
+margin-right: 0px;
+margin-top: 20px;
+
+}
+#back:hover{
+    background-color: orange;
+    color: white;
+} @media screen and (max-width: 375px){
+    .container{
+        margin: 30% auto;
+        width: 80%;
+        /* padding-left: -5px;   */
+    }
+    .one{
+       
+        border-radius: 50%;
+        margin-inline: -5px;
+        cursor: pointer;  
+    }
+    .circle{
+        margin:0px auto ;
+        padding-left: -15px;
+    }
+    .container2{
+       
+        margin: 30% 5px;
+        border-radius: 25px;
+        padding:0px 25px 30px 25px
+        
+        }
+        .we br{
+            display: none;
+        }
+
+} 

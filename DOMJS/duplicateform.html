@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Name:</label>
+    <input type="text" id="we">
+    <p id="email_id"></p>
+    <p id="username"></p>
+
+    <button onclick="generate()">SUBMIT</button>
+
+    <script>
+        const generate =()=>{
+            let element1 = document.createElement('input')
+            element1.placeholder = "input name";
+            element1.style.marginTop = "15px";
+            let div = document.createElement('div')
+            div.appendChild(element1);
+            document.getElementById('email_id').append(div)
+        }
+    </script>
+</body>
+</html>

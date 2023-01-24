@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+
+        <div class="weather">
+            <div class="search">
+                <input type="search" id="citysearch" placeholder="City search"><button onclick="cities()" id="btn">Search</button>
+            </div>
+            <div class="inline">
+                <div class="ico" id="icon"><img id="image2" alt=""></div>
+                <div class="temp" id="temperature"></div>
+                <div class="ico" id="icon2"><img id="image" alt=""></div>
+            </div>
+            <div class="con">
+                <span id="condition"></span>
+            </div>
+        </div>
+        <script>
+            function cities(data) {
+                const API_key = '1b8b00ece5a314e9cc5000658748cb20' 
+                let search = document.getElementById('citysearch').value
+                endpoint = `https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=${API_key}&units=metric`
+    
+                const options = {
+                    method: 'GET'
+                };
+                if (search === "") {
+                    document.getElementById('citysearch').placeholder = 'Type something'
+                } else {
+                    fetch(endpoint, options)
+                        .then(response => response.json())
+                        .then(data => {
+                            console.log(data)
+                            let get = data['weather'][0]['icon']
+                            let condition = document.getElementById('condition')
+                            condition.innerHTML = data['weather'][0]['main']
+                            let icon = document.getElementById('icon')
+                            let temperature = document.getElementById('temperature')
+                            temperature.innerHTML = data['main']['temp'] + 'C'
+                            var icon2 = document.getElementById('icon2')
+                            let createIcon = document.getElementById('image')
+                            createIcon.style.width = '200px'
+                            createIcon.style.height = '200px'
+                            createIcon.src = "https://openweathermap.org/img/wn/" + data['weather'][0] + "@2x.png"
+                        let img = document.getElementById('image2')
+                        img.style.width = '200px'
+                        img.style.height = '200px'
+                        img.src = "https://openweathermap.org/img/wn/" + data['weather'][0]['icon'] + "@2x.png"
+
+                    })
+                    .catch(err => console.error(err));
+            }
+        }
+    </script>
+</body>

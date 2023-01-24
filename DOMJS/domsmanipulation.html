@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <h1 id="ht">This is real Dom Manipulation</h1>
+        <p id="para">I am  a good paragraph</p>
+        </div>
+
+        <button>submit</button>
+
+        <script>
+            let divmain = document.getElementById('main')
+            divmain.insertAdjacentHTML('beforebegin', '<p>This is my text</p>')
+                divmain.insertAdjacentHTML('afterbegin', '<p>This is mytext</p>')
+                divmain.insertAdjacentHTML('beforeend', '<p>This is myy text</p>')
+                divmain.insertAdjacentHTML('afterend', '<p>This is mytext</p>')
+            
+                // let ht = document.getElementById('ht')
+
+                // let paras = document.createElement('p')
+                
+                // paras.innerHTML =`This is advance Dom Manipulation`
+                // divmain.appendChild(paras)
+                // divmain.replaceChild(paras, ht)
+                
+
+                
+
+                // divmain.innerHTML = `<p>This is advance Dom Manipulation</p>`
+                
+
+                // divmain.removeChild(ht)
+
+                // let para = document.getElementById('para')
+                // divmain.removeChild(para)
+
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background: linear-gradient(90deg, rgb(29, 29, 65), rgb(148, 15, 15));
+            display: block;
+            text-align: center;
+            margin-top: 50px;
+            
+        }
+
+        .container{
+            background-color: white;
+            max-width: 50%;
+            display:block;
+            margin-left: 25%;
+            margin-top: 10%;
+            padding-top:5% ;
+            padding-bottom: 10%;
+        }
+       
+        label.lab{
+            font-weight: bolder;
+        }
+
+        label.lab2{
+            font-weight: bolder;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+                <h1>Temperature converter</h1><br>
+                <label for="celcius" class="lab">CELCIUS:</label>
+                <input type="number" name="celcius" id="celcius">
+                <label for="kelvin" class="lab2">FARENHEIT:</label>
+                <input type="number" name="farenheit" id="farenheit">
+
+        <script>
+                celcius.addEventListener('input', cell);
+                farenheit.addEventListener('input', far)
+
+            function cell(){               
+                 let cel = document.querySelector('#celcius').value
+                let far = document.querySelector('#farenheit')
+                far.value = ((cel * 1.8) + 32).toFixed(2)
+            }
+
+            function far(){
+                let cel = document.querySelector('#celcius')
+                let far = document.querySelector('#farenheit').value
+                cel.value = ((far - 32) / 1.8 ).toFixed(2)          
+            }
+
+        </script>
+
+    </div>
+</body>
+</html>

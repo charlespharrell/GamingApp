@@ -1,0 +1,141 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    EVEN AND ODD CALCULATION <br><br>
+<!-- <label for="even">Enter the integer</label><br>
+    <input type="text" name="even" id="even"><br><br>
+    <button onclick="calculate()">calculate</button><br>
+    <div id="result"> </div> -->
+
+<label for="var">Please enter your value</label><br>
+<input type="text" name="var" id="var"><br><br>
+<button onclick="check()">submit</button>
+<div id="result"></div>
+
+    <script>
+
+        function check(){
+            let variable = parseInt(document.querySelector('#var').value)
+            let result = parseInt(document.querySelector('#result').value)
+
+            if (variable ===isNaN){
+                document.getElementById('result').innerHTML=` the value ${variable} is not a number`
+                
+            }
+            else
+            document.getElementById('result').innerHTML = `the value ${variable} is a number`
+
+        }
+
+// function isVariable(variable){
+//                 if (isNaN(variable)){
+//                     document.writeln(`The value ${variable} is not number`)
+//                     console.log(`The value ${variable} is not number`)
+//                 }
+//                     else
+//                     document.writeln(`This ${variable} is a number`)
+//                     console.log(`This ${variable} is a number`)
+
+//                 }
+
+            
+//             isVariable(prompt('Please enter your value'))
+
+// function calculate(){
+//     let num = parseInt(document.querySelector('#even').value)
+//     let result = parseInt(document.querySelector("#result").value)
+    
+//     let int = num%2;
+//     if (int===0){
+//             document.getElementById('result').innerHTML=`The integer ${num} is even `
+//         }
+//         else if(int = isNaN){
+//         document.getElementById('result').innerHTML=`This is not valid`
+//     }
+//     else
+//     document.getElementById('result').innerHTML=`The integer value  ${num} is odd`
+
+
+// }
+
+ // EVEN AND ODD
+    //         function isEvenorOdd(num){
+    //             let int = num%2;
+       
+    //    if (int===0){
+    //         document.writeln(`The integer ${num} is even `)
+    //     }
+    //     else 
+    //         document.writeln(`The integer value  ${num} is odd`)
+               
+    //         }
+    //         isEvenorOdd(prompt('Input the integer'))
+
+            
+    //     let number= Number(prompt('Input the Integer'))
+    //     let int = number%2;
+       
+    //    if (int=0){
+    //         document.writeln(`The integer ${number} is even `)
+    //     }
+    //     else 
+    //         document.writeln(`The integer value  ${number} is odd`)
+
+
+
+
+
+        // LARGER NUMBER
+        // function larger (big, small){
+
+        //     if ((big && small) === ' '){
+        //         document.writeln(`Please enter a valid number`)
+
+        //     }
+        // else
+
+
+        //     if (big>small){
+        //         document.writeln(`the value  ${big} is greater than the value  ${small}`)
+        //     }
+        //     else if(big===small){
+        //         document.writeln(`the vale  ${big} and ${small} is the same`)
+
+        //     }
+        //     else if(big<small){
+        //         document.writeln(`the value ${big} is less than ${small}`)
+
+        //     }
+        
+            
+        // }
+        // larger(Number(prompt('Enter your first value')), Number(prompt('Enter your second num')))
+
+
+        // function largest( num1, num2, num3){
+        //     if (num1>num2 && num2> num3){
+        //         document.writeln(`${num1} is greater than ${num2} and ${num3}`)
+            
+        //     }
+        //     else if (num2>num3>1){
+        //         document.writeln(`${num2} is greater than ${num3} and ${num1}`)
+            
+        //       }
+        //       else if (num3>num1>num2){
+        //         document.writeln(`${num3} is greater than ${num2} and ${num2}`)
+            
+        //       }
+        //       else(`This is not valid`)
+        // }
+        // largest(Number(prompt('Enter num1')), Number(prompt('Enter num2')), Number(prompt('Enter num3')))
+
+        
+    </script>
+</body>
+</html>

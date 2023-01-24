@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Items: <input type="text" id="inp">
+    <button id="btn" onclick="output()">click</button>
+    <div id="char"> </div>
+
+    <script>
+        function output(){ 
+            let item =
+        [  {
+            name:'Tea',
+            Tprice: 234
+           },
+
+           { name: 'milk',
+            price: 334
+           }        
+           
+        ]
+        let Tea = item.name
+        document.getElementById('inp').value = item.name
+        let tprice = item.Tprice
+        let inpval = document.getElementById('inp').value
+        if (inpval===Tea){
+        pars(document.getElementById('char').innerHTML)=`${tprice}`
+        }
+
+        }
+       
+    </script>
+</body>
+</html>

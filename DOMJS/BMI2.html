@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="/DOMJS/DOM.js/BMI2.js"> -->
+    <!-- <script src="/DOMJS/DOM.js/BMI2.js"></script> -->
+</head>
+<body>
+    <div class="container">
+        <h1 >
+            BMI CALCULATOR
+        </h1>
+
+        <p>height (in cm)</p>
+        <input type="text" id="height">
+        <p>Weight in kg</p>
+        <input type="text" id="weight"><br><br>
+
+        <!-- <input type="text" id="result"/> -->
+
+        <button id="btn">Calculate</button>
+        <div id="result"></div>
+
+    </div>
+ <script>
+    
+    let button = document.querySelector('#btn')
+    button.addEventListener('click', calculateBMI);
+
+
+function calculateBMI(){
+    let height= parseInt(document.querySelector('#height').value)
+    let weight= parseInt(document.querySelector('#weight').value)
+    let result= parseInt(document.querySelector('#result'))
+
+    if (height === " "|| isNaN(height))
+    document.getElementById('result').innerHTML = 'Provide a valid height'
+    else if (weight === " " || isNaN(weight))
+    document.getElementById('result').innerHTML = 'Provide a valid weight'  
+    else{
+    let BMI = (weight/ ((height**2)/10000)).toFixed(2)
+    if(BMI< 18.6 )
+    document.getElementById('result').innerHTML = `underweight : <span>${BMI}</span>`     
+    else if (BMI >= 18.6 && BMI <24.9)
+       document.getElementById('result').innerHTML =`Normal : <span>${BMI}</span>`;
+       
+
+        else 
+        document.getElementById('result').innerHTML = `overweight : <span>${BMI}</span>`
+        // document.writeln(`overweight : <span>${BMI}</span>`)
+        
+    }
+
+} 
+
+
+</script>
+
+
+
+
+
+
+    </div>
+</body>
+</html>

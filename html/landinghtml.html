@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            position: relative;
+            background: linear-gradient(90deg, rgb(29, 29, 65), rgb(148, 15, 15));
+            margin: 30px;
+        }
+       div .land{
+            position: absolute;
+            left: 200px;
+            color: white;
+              
+        }
+        div .land a{
+            text-decoration: none;
+        }
+        ul{
+            position: absolute;
+            left: 650px;
+            display: flex;
+            list-style: none;
+        }
+        ul li a{
+            margin-inline-end: 20px;
+            text-decoration: none;
+            color: blue;
+        }
+        ul .get a{
+            border: 1px solid white;
+            padding: 10px;
+        }
+        section {
+            text-align: left;
+            position: absolute;
+            top: 250px;
+            left: 250px;
+            color: white;
+
+        }
+        section .fly{
+            font-size: 40px;
+        }
+        section .see{
+            display: inline-block;
+            color: white;
+            background-color: forestgreen;
+            padding: 5px;
+            border-radius: 8px;
+        }
+        .sign{
+            display: inline-block;
+            position: absolute;
+            top: 200px;
+            left: 700px;
+            width: 300px;
+            height: 300px;
+            background-color: white;
+
+        }
+        .sign .si{
+            color: black;
+           text-align: center;
+            display: block;
+            /* padding: 20px;
+            margin: 50px; */
+            
+            
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+             'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .sign .form1{
+
+            text-align: center;
+            
+            /* position: absolute;
+            left: 20px;
+           max-width: 70%;
+           width: 100px; */
+        }
+        .sign .form1 #username{
+            
+            
+            display: inline-block;
+            width: 220px;
+            background-color: whitesmoke;
+            border-color:white;
+        }
+        .sign .form1 #email{
+            width: 220px;
+            display: inline-block;
+            background-color: whitesmoke;
+            border-color: white;
+        }
+        .sign .form1 #email2{
+            width: 220px;
+            display:inline-block;
+            background-color: whitesmoke;
+            border-color: white;
+        }
+        .sign .form1 #type{
+            width: 220px;
+            display: inline-block;
+            background-color: whitesmoke;
+            border-color: white;
+        }
+        .sign .form1 #submit{
+            width: 220px;
+            display: inline-block;
+            background-color: rgb(31, 2, 85);
+            border-radius: 8px;
+            color: white;
+        }
+        ul li:hover{
+          text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <p class="land"> <a href="landing.html">Landing</a> </p>
+
+    <ul>
+        <li> <a href="home.html">Home</a></li><br>
+        <li> <a href="Featuring.html">Featuring</a></li><br>
+        <li> <a href="Review.html">Review</a></li><br>
+        <li> <a href="Pricing.html">Pricing</a></li><br>
+        <li> <a href="Faq.html">FAQ</a></li><br>
+        <li class="get"> <a href="Get.html">Get Started</a></li>
+    </ul>
+    <section>
+        <span class="fly">
+            Fly makes you <br> faster
+        </span> <br><br>
+        <span class="new">New free template by <small>uicodes.com.</small>For more temolates,<br> 
+            visit the <small>site.</small>Lorem ipsum dolor sit amet consectetur <br>
+             adipisicing elit.
+        </span><br><br>
+             <span class="see">SEE PRICING</span>
+    </section>
+    <section class="sign">
+
+<p class="si">Sign Up For free</p><br>
+
+<form class="form1">
+    <input type="username" id="username" placeholder="Full name" required><br>
+    <br>
+    <input type="email" id="email" placeholder="Email" required><br>
+    <br>
+    <input type="email" id="email2" placeholder="Email" required><br><br>
+
+    <select name="type" id="type" >
+        <option value="Type" aria-placeholder="Type">Type</option>
+    </select><br><br>
+    <input type="submit" id="submit" value="Register">
+
+</form>
+</section>
+</div>
+</body>
+</html>

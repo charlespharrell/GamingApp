@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+        // function sayhi(name, age, gender){
+        //     document.writeln(`Hello Nurse ${name},<br> I believe you are ${age} years, and you are a ${gender} `)
+        // }
+
+        // sayhi('Awele',23,'female');
+
+        function average(array){
+            let total = 0;
+            let mean =0;
+            
+            for(let index=0; index<array.length; index++){
+                total += array[index]
+                 mean = total/array.length
+            }
+            return mean;
+            
+        }
+        let mean = average([5,6,7,8,9,8,7,6])
+        document.writeln(`The mean total is = ${mean}`)
+        console.log(`The mean total is = ${mean}`)
+            
+            
+        // function average(prom){
+           
+        //     let total = 0;
+        //     let mean =0;
+            
+        //     for(let index=0; index<prom.length; index++){
+        //         total += prom[index]
+        //          mean = total/prom.length
+        //     }
+        //     return mean;
+        // }
+        // let mean =average(Number(prompt('Enter your value')))
+        // document.writeln(mean)
+        // console.log(mean)
+            
+        
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <ul>We have:
+            <li><a href="#">Milk</a> </li>
+            <li><a href="#">Milo</a></li>
+            <li><a href="#">Sugar</a></li>
+            <li><a href="#">Bread</a></li>
+            <li><a href="#">Rice</a></li>
+            <li><a href="#">Beans</a></li>
+            <li><a href="#">Yam</a></li>
+            <li><a href="#">Semovita</a></li>
+            <li><a href="#">Indomie</a></li>
+            <li><a href="#">Spaghetti</a></li>
+        </ul>
+
+        <div class="searching">
+            Type the item u need here: <input type="text" id="inp" required>
+            <input type="button" id="search" value="Search" onclick="listItem()">
+            <input type="button" id="addingAll" value="Total Amount" onclick="adding()"> </div>
+
+        <div class="total"> </div>
+        <div class="prices">
+            <label for="sum">Total : </label>
+            <span id="sum"></span>
+            <hr>
+            <br> Item(s) &nbsp;&nbsp;&nbsp;Price(s)<br>
+            <hr>
+        </div>
+    </div>
+    <script>
+        let list = [
+            milk = {
+                name: 'Milk',
+                price: 8500,
+            },
+            milo = {
+                name: 'Milo',
+                price: 6500,
+            },
+            sugar = {
+                name: 'Sugar',
+                price: 500,
+            },
+            bread = {
+                name: 'Bread',
+                price: 1300,
+            },
+            rice = {
+                name: 'Rice',
+                price: 32000,
+            },
+            beans = {
+                name: 'Beans',
+                price: 3000,
+            },
+            yam = {
+                name: 'Yam',
+                price: 1200,
+            },
+            semovita = {
+                name: 'Semovita',
+                price: 5500,
+            },
+            indomie = {
+                name: 'Indomie',
+                price: 3400,
+            },]
+            var addItems = []
+
+
+        function listItem() {
+            let inputVal = document.getElementById('inp').value.toLowerCase()
+            if (inputVal === 'milk') {
+                addItems.push(Number(milk.price))
+                let label = document.createElement('label')
+                let par = document.createElement('span')
+                label.innerText = 'Milk : '
+                par.innerHTML = milk.price
+                document.body.appendChild(label)
+                document.body.appendChild(par)
+                let br = document.createElement('br')
+                document.body.appendChild(br)
+            } else if (inputVal === 'milo') {
+                addItems.push(Number(milo.price))
+                let label = document.createElement('label')
+                let par = document.createElement('span')
+                label.innerText = 'Milo : '
+                par.innerHTML = milo.price
+                document.body.appendChild(label)
+                document.body.appendChild(par)
+                let br = document.createElement('br')
+                document.body.appendChild(br)
+            } else if (inputVal === 'sugar') {
+                addItems.push(Number(sugar.price))
+                let label = document.createElement('label')
+                let par = document.createElement('span')
+                label.innerText = 'Sugar : '
+                par.innerHTML = sugar.price
+                document.body.appendChild(label)
+                document.body.appendChild(par)
+                let br = document.createElement('br')
+                document.body.appendChild(br)
+            } else if (inputVal === 'bread') {
+                addItems.push(Number(bread.price))
+                let label = document.createElement('label')
+                let par = document.createElement('span')
+                label.innerText = 'Bread : '
+                par.innerHTML = bread.price
+                document.body.appendChild(label)
+                document.body.appendChild(par)
+            } else if (inputVal === "") {
+
+} else {
+
+    let lab = document.createElement('label')
+    lab.innerText = "Sorry we don't have this product"
+    document.body.appendChild(lab)
+    let br = document.createElement('br')
+    document.body.appendChild(br)
+}
+}
+
+
+
+function adding() {
+let count = addItems.reduceRight(function(a, b) {
+    return a + b;
+});
+document.getElementById('sum').innerHTML = count
+    // document.write(count)
+
+}
+</script>
+    </script>
+</body>
+</html>

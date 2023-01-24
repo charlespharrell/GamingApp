@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip calculator</title>
+    <link rel="stylesheet" href="/Myproject/tipcalculator.css">
+</head>
+<body>
+    <div class="container">
+     <div class="splitt">
+        <span class="splitter">SPLI</span><br> 
+        <span class="splitter">TTER</span>
+    </div>
+        <div class="cont">
+            <div class="cont1">
+                <div class="label">
+                    <label for="bill" class="bill">Bill</label><br>
+                    
+                    <input type="text" id="bill" placeholder="0" >
+                </div>
+               
+    
+                <div id="select"><span>Select Tip %</span></div>
+                <div class="percent">
+                    
+                    <input type="radio" name="percent" value="5" id="five" >
+                    <label for="five" class="cent"  >5%</label>
+                    
+                    <input type="radio" name="percent" value="10" id="ten" >
+                    <label for="ten" class="cent" >10%</label>
+                    
+                    <input type="radio" name="percent" value="15" id="fifteen" >
+                    <label for="fifteen"class="cent" >15%</label>
+                    
+                    <input type="radio" name="percent" value="25" id="twentyfive" >
+                    <label for="twentyfive" class="cent" >25%</label>
+                    
+                    <input type="radio" name="percent"   value="50" id="fifty" >
+                    <label for="fifty" class="cent">50%</label>
+                    
+                    <input type="text" name="percent" id="custom2" class="cent" placeholder="custom" >
+                    <!-- <label for="custom" class="cent custom">custom</label> -->
+                </div>
+                
+
+                <label class="label2" for="input2">Number of people</label>
+                <div class="nos"><span></span></div>
+                <div id="inn">can't be zero</div>
+                <input type="number" id="input2" placeholder="0">
+            </div>
+           
+            <div class="cont2">
+                <div class="tip amount">
+                    <div id="tip">
+                        <div class="tip">Tip  Amount </div><br>
+                        <div class="per">/ person</div>
+                    </div>
+                    <div id="amount">
+                        <span class="Amount" id="Amount">$<span id="Amount3">0.00</span> </span>
+                    </div>
+                </div>
+                <div class="total">
+                    <div id="total2">
+                        <div class="Total">Total</div><br>
+                        <div class="per2">/ person</div>
+                    </div>
+                    <div id="amount2">
+                        <span class="Total" id="Total">$<span id="Total3">0.00</span></span>
+                    </div>
+                </div>
+                <button id="btn">RESET</button>
+            </div>
+            
+        </div>
+    </div>
+    <script src="/Myproject/tipcalculator.js"></script>
+</body>
+</html>

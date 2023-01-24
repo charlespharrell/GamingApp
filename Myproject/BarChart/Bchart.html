@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Bchart.css">
+</head>
+<body>
+    <div class="header">
+        <div class="mybal">
+            <div class="my">My Balance</div>
+        <div class="bal">$921.48</div>
+        </div> 
+        <div class="Bcircle"></div>  
+        <div class="wcircle"></div>
+    </div>
+    <div class="container">
+        <div class="spend">Spending - Last 7 days</div><br>
+    <div class="bars ">
+        <div class="bar one" id="mon" onmouseover="over1()" onmouseout="out1()"></div>  
+        <div class="bar two" id="tue"onmouseover="over2()" onmouseout="out2()" ></div>
+        <div class="bar three" id="wed" onmouseover="over3()" onmouseout="out3()" ></div>
+        <div class="bar four" id="thu" onmouseover="over4()" onmouseout="out4()"></div>
+        <div class="bar five" id="fri" onmouseover="over5()" onmouseout="out5()"></div>
+        <div class="bar six" id="sat" onmouseover="over6()" onmouseout="out6()"></div>
+        <div class="bar seven" id="sun" onmouseover="over7()" onmouseout="out7()"></div>
+        
+        <div id="bars" >
+        <div class="ba mon" >mon</div>
+        <div class="ba tue" >tue</div>
+        <div class="ba wed" >wed</div>
+        <div class="ba thu" >thu</div>
+        <div class="ba fri" >fri</div>
+        <div class="ba sat" >sat</div>
+        <div class="ba sun" >sun</div>
+        </div>
+        
+        <div class="res resmon" id="resmon">$</div>
+        <div class="res restue" id="restue">$</div>
+        <div class="res reswed" id="reswed">$</div>
+        <div class="res resthu" id="resthu">$</div>
+        <div class="res resfri" id="resfri">$</div>
+        <div class="res ressat" id="ressat">$</div>
+        <div class="res ressun" id="ressun">$</div>
+    </div>
+    <hr>
+
+    <div class="Tamount">
+        <div class="total">Total this month</div>
+        <div class="amount">$478.33</div>
+    </div>
+    <div class="fper">
+        <div class="percent">+2.4%</div>
+        <div class="from">from last month</div>
+    </div>
+   
+
+</div>
+<script src="./Bchart.js"></script>
+</body>
+</html>

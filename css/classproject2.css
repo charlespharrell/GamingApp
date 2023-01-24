@@ -1,0 +1,293 @@
+body{
+    color: rgb(187, 13, 13);
+    background-color: white;
+   margin: 0px;
+}
+
+hr{
+    margin-top: 0px;
+ }
+/* 
+ label[for="check"]{
+    display: inline-block;
+    margin: 20px;
+    padding-left: 30px;
+    background: url(/css/img/drop\ down.png) no-repeat; 
+}
+input:checked + label[for="check"] */
+.hr1{
+    display: block;
+    position: relative;
+     border: 1px solid #888 ;  
+    height: 45px;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 15px;  
+    
+}
+
+.hr1 span a{
+    position: absolute;
+    padding-top: 4px;
+    
+} 
+
+.hr1 .role{
+    position: absolute;
+    top: 15px;
+    left: 50px;
+    color: black;
+    font-size: large;
+}
+
+.hr1 #check{
+    float: right;
+    margin: 15px;
+}
+
+.conact{
+    display: block;
+    position: relative;
+    margin-top: 20px 0;
+}
+
+ .container{
+    position: absolute;
+    top: 35%;
+    left: 91%;
+    margin: 0;
+}
+.active{
+    position: absolute;
+    top: 35%;
+    left: 1%;
+    color: black;
+    font-size: larger;
+    margin-bottom: 20px;
+}
+
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height:20px;
+    margin-left: 30px;
+    padding: 0px 20px;
+}
+.slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(19, 19, 83);
+    transition: 4s;
+    border-radius: 34px;
+}
+.switch input{display: none;}
+        
+        .slider:before{
+            position: absolute;
+            content: "";
+            height: 30px;
+            width: 30px;
+            left: 5px;
+            bottom: -4px;
+            background-color: rgb(46, 8, 233);
+            transition: 0.4s;
+            border-radius: 50px;
+        }
+        input:checked + .slider{
+            background-color: rgb(64, 86, 148);
+
+        }
+        input:checked + .slider:before{
+            transform: translateX(50px);
+        }
+
+
+ .hr1 a{
+    display: inline-block;
+    margin: 2px;
+    padding-top:0px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;  
+}
+
+.hr1 span .role{
+    display: inline-block;
+    padding-left: 10px;
+    padding-top: -20px; 
+    padding-bottom: 15px;
+    color: black; 
+}
+
+.hr1 .check{
+    position: absolute;
+    left: 1290px;
+    top: 7px;
+}
+
+.hr{
+    margin: 5px;
+    max-width: 100%;
+}
+.codes{
+    display: block;
+    position: relative;
+}
+.codes .aster{
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 38px;
+}
+.hr .aster2{
+    display: inline-block;
+    position: absolute;
+    top: 125px;
+    left:80px;
+
+}
+.hr #code{
+    width: 100%;
+    height: 45px;
+    color: red;
+    margin-bottom: 10px;
+}
+.hr #describe{
+    width: 100%;
+    height: 45px;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.emcard{
+    display: block;
+    position: relative;
+    background-color: blue;
+    padding: 10px;
+
+    
+}
+
+.hr .employee{
+    display: block;
+    background-color: rgb(47, 47, 141);
+    height: 45px;
+    width: 100%;
+    border-radius: 2px;
+
+}
+.hr  #card{
+    display: inline-block;
+    margin: 0px;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding-right: 10px;
+}
+
+.hr .employee .em{
+    display:inline-block;
+    position: relative;
+    top: 0px;
+    left: 10px;
+    color: rgb(252, 251, 253);
+    font-size: large;   
+}
+
+.em{
+    display: inline-block;
+    color: white;
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    background-color: white;
+    
+}
+
+.grid-item {
+    width: 50%px;
+    height: 45px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: white
+    
+
+}
+.grid-item #manage{
+    width:650px;
+    height: 45px;
+    border-radius: 3px;
+
+}
+.grid-item #place{
+    width:650px;
+    height: 45px;
+    border-radius: 3px
+
+
+}
+.grid-item #employ{
+    width:650px;
+    height: 45px;
+    border-radius: 3px
+}
+.grid-item #education{
+    width:650px;
+    height: 45px;
+    border-radius: 3px
+}
+.grid-item #experience{
+    width:650px;
+    height: 45px;
+    border-radius: 3px
+
+}
+.grid-item #training{
+    width:650px;
+    height: 45px;
+    border-radius: 3px
+
+}
+.grid-item #legal{
+    width:650px;
+   height: 45px;
+    border-radius: 3px
+}
+
+footer{
+    border: 1px solid gray;
+    display: block;
+    max-width: 100%;
+    height: 50px;
+
+}
+footer img{
+    display: inline-block;
+    margin: -10px;
+    padding-left: 130px;
+    text-align: center;
+    padding-top: 15px;
+ 
+}footer img:hover{
+    /* border: 1px solid purple; */
+    background-color: purple;
+    text-align: center;
+    margin: -5px; 
+    size: 10px;
+   
+    
+}
+@media screen and (max-width:500px){
+    
+}

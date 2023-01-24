@@ -1,0 +1,109 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+        background: white;
+        text-align: center;
+        padding: 30px;
+        }
+        .container{
+            max-width: 400px;
+            display: block;
+            margin: 10vh auto 0 auto;
+            background-color: white;
+            box-shadow: 0px 0px 20px 20px gray;
+        }
+        #display{
+            display: block;
+            max-width: 398px;
+            font-size: 40px;
+            height: 70px;
+            line-height: 70px;
+            padding:16px 8px;
+            border: 0px solid rgb(145, 139, 139);
+        }
+        .buttons{
+            display: grid;
+            border: 1px solid rgb(130, 127, 127);
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: repeat(5, 70px); 
+        }
+        .buuton{
+            text-align: center;
+            cursor: pointer;
+            background-color: white;
+            border: 1px solid rgb(130, 127, 127);
+            font-size: 20px;
+        }
+        #equal{
+            background-color: blue;          
+        }
+        .buuton:hover{
+            background-color: black;
+            color: white;
+            transition: 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">      
+       <div id="display"></div>
+       <div class="buttons">
+        <div class="buuton">CE</div>
+        <div class="buuton">/</div>
+        <div class="buuton">*</div>
+        <div class="buuton">clear</div>
+        <div class="buuton">7</div>
+        <div class="buuton">8</div>
+        <div class="buuton">9</div>
+        <div class="buuton">-</div>
+        <div class="buuton">4</div>
+        <div class="buuton">5</div>
+        <div class="buuton">6</div>
+        <div class="buuton">+</div>
+        <div class="buuton">1</div>
+        <div class="buuton">2</div>
+        <div class="buuton">3</div>
+        <div class="buuton">.</div>
+        <div class="buuton">(</div>
+        <div class="buuton">0</div>
+        <div class="buuton">)</div>
+        <div id="equal" class="buuton">=</div>       
+       </div>
+       <script>
+        let display = document.getElementById('display')
+        let btns = Array.from(document.getElementsByClassName('buuton'))
+        btns.forEach(btn=>{
+        btn.addEventListener('click', ep=>{
+        switch(ep.target.innerText){
+        case 'CE':
+            display.innerText ='';
+            break;
+        case 'clear':
+            if(display.innerText){
+            display.innerText = display.innerText.slice(0, -1)
+            }
+            break;
+        case '=':
+        try{
+            display.innerText = eval(display.innerText);
+            } 
+            catch{
+            display.innerText ='Error'
+            }
+            break;
+        default:
+            display.innerText += ep.target.innerText
+
+            }
+            })
+        })
+       </script> 
+        
+    </div>
+</body>
+</html>

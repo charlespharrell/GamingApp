@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            /* width: 500px;
+            height: 300px; */
+            position: relative;
+            border-radius: 10px;
+         
+
+        }
+        .front{
+            background-color: brown;
+            top: 10px;
+            left: 100px;
+            z-index: 2;
+            opacity: 0.4;
+        }
+        .back{
+            background-color: goldenrod;
+            top: -60px;
+            left: 35px;
+            z-index: 1;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="front">
+        I am in the front
+    </div>
+    <div class="back">
+        You are behind me.
+    </div>
+</body>
+</html>

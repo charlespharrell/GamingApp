@@ -1,0 +1,183 @@
+/* *{margin: 0px;
+    padding: 0px;
+    margin-bottom: 0px; */
+    .div{
+        background-color: rgb(252, 249, 249);
+        display: block;
+        position: fixed;
+        top: 0;
+        max-width: 100%;
+        width: 1800px;
+        height: 50px;
+        margin: 0px;
+        z-index: 1;
+       
+    }
+
+       .div #trumimage{
+            display: inline-block;
+            position: fixed;
+            top: 0;
+            margin: 0px;
+            padding: 0px;
+            z-index: 1;
+
+
+        }
+        .div .origin{
+            position: fixed;
+            display: inline-block;
+            font-size: 30px;
+            margin: 10px 100px;
+            top: 0;
+            z-index: 1;
+        }
+        .div div .link{
+            display: flex;
+            position: absolute;
+            left: 1000px;
+            list-style-type: none;
+        }
+        .div div .link li a{
+            margin-inline-end: 20px;
+            text-decoration: none;
+            color: black;
+            /* position: fixed; */
+            
+        }
+        .link li a{
+               display: inline-block; 
+               top: 0;
+               right: 600px;
+
+            
+        }
+     .header1{            
+            display: block;
+            text-align: center;            
+        }
+        .header1 #email{
+            width: 300px;
+            height: 15px;
+            padding: 3px;
+
+        }
+        .header1 p{
+            display: inline-block;
+            background-color: goldenrod;
+            color: black;
+            width: 300px;
+            height: 15px;
+            padding: 3px;
+            font-size: 15px;
+        }
+        .header{
+            display: block;
+            
+        }
+        .header #fire{
+            display: block;
+            margin-left: 150px;
+            padding: 30px;
+        
+        }
+        .header .premium{
+        
+            display:block;
+            position: absolute;
+            top: 290px;
+            
+            margin-left: 300px;
+            margin-top: 0px;
+            
+        
+        }
+        
+        .header .Fast{
+            display:block;
+            position: absolute;
+            top: 410px;
+            margin-left: 300px;
+        }
+        .header .quality{
+            display:block;
+            position: absolute;
+            top: 530px;
+            margin-left: 300px;
+        }
+      span #me{
+            
+            margin-top: 80px;
+            margin-left: 400px;
+        }
+        .box{
+            display: block;
+            text-align: center;
+        }
+        .box .tenor{
+            display: inline-block;
+            border: 1px solid rgb(12, 12, 12);
+           text-align: center;
+           width: 250px;
+           height: 250px;
+        }
+    .box .tenor h3{
+        display: block;
+        background-color: gray;
+       margin: 0px;
+       height: 30px;
+       padding: 15px;
+        
+    }
+.box .tenor strong{
+    display: block;
+   
+    font-size: 25px;
+}
+.box .tenor #select{
+    display: inline;
+    background-color: goldenrod;
+    margin: 20px; 
+    width: 100px;
+}
+footer { 
+     position: absolute;
+    left: 0; 
+     display: block; 
+      max-width: 100%;  
+      width: 1800px;
+    height: 50px; 
+    background-color: gray; 
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.foot .foot2 {
+    position: absolute;
+            left: 10px;
+            display: flex;
+            list-style: none; 
+            margin-left: 70px;
+}
+.foot .foot2 li a{
+    margin-inline-end: 20px;
+    text-decoration: none;
+    color: blue;
+}
+footer .foot .freecode{
+    display: block;
+    text-align: center;
+    padding: 15px;
+}
+footer .freecode .free{
+    text-decoration: underline;
+}
+   footer .foot #copy{
+       display: inline-block;
+       position: absolute;
+       left: 1000px;
+       bottom: 15px;
+      
+        
+        
+
+    } 

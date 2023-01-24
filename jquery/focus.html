@@ -1,0 +1,52 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="./jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
+        <script>
+            $(document).ready(
+                function(){
+                    focus(function(){
+                        $(this).next('span').show().fadeOut('slow')
+                    })
+             
+            }
+            )
+        </script>
+        <style>
+            label{
+                display: block;
+                margin: 5px 0px;
+            }
+            label span{
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="">
+            <label for="">Email:
+                <input type="text" name="" id=""><span>focus fire</span>
+            </label>
+            <label for="">Password:
+                <input type="password"><span>focus fire</span>
+            </label>
+            <label for="">Name:
+                <input type="text"><span>Name</span>
+            </label>
+        </form>
+    </body>
+    </html>
+    </body>
+    </html>

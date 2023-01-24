@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let rn = Number(prompt('Pease enter any value your want to add up'))
+        let nums =[]
+        for(let i = 1; i<= rn; i++){
+            let num = Number(prompt('Please enter a number'))
+            nums.push(num)
+        }
+        document.writeln(`the numbers in the array are ${nums} <br>`)
+        let sum = 0;
+        function addup(nums){
+            for(let i = 0; i<nums.length; i++){
+                sum += nums[i]
+            }
+            average = sum/rn
+        document.writeln(`The sum of the numbers in the aray is ${sum}, and the average is ${average}`)
+        }
+        addup(nums)
+    </script>
+</body>
+</html>

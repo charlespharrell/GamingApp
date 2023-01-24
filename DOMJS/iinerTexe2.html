@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="regform">
+        user name: <input type="text"><br><br>
+        Password: <input type="password" onkeypress="passwordVal()" name="pw" id="ps">
+        <br><br>
+        confirm password: <input type="password" name = 'rpw' id="ps1"><br><br>
+        password strength: <span id="pwstr"></span><br><br>
+        Password check: <span id="passer"></span><br><br>
+        <input type="button" value="Submit" onclick="verify()"> <span id="passer"></span>
+    </form>
+
+    <script>
+        let pass =''
+        let pass1=''
+        function verify(){
+
+            pass=document.regform.pw.value
+            pass1=document.regform.rpw.value
+
+            if(pass === pass1){
+            document.getElementById('passer').innerText = 'correct'
+            }
+            else{
+                document.getElementById('passer').innerText ='check your password'
+            }
+        }
+    </script>
+</body>
+</html>

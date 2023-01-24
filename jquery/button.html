@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
+</head>
+<script>
+        $(document).ready(
+            function(){
+            var chunk = true;
+            $('button').click(
+
+                function(){
+                    if(chunk){
+                    $('.div').css({'width':'400px','height':'400px','background-color':'orange','color':'black'})
+                    chunk = false;
+                }
+                else{
+                    $('.div').css({'width':'200px','height':'200px','background-color':'black','color':'white'}) 
+                    chunk = true
+                }
+
+            }
+                
+            )
+            // $('.def').click(
+            //     function(){
+            //         $('.div').css({'width':'200px','height':'200px','background-color':'black','color':'white'})                  
+            //     }
+            // )
+        
+        })
+</script>
+<style>
+    div{
+        display: block;
+        width: 200px;
+        height: 200px;
+        background-color: black;
+        color: white;
+    }
+</style>
+<body>
+    <div class="div">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus veniam quo tenetur?</div>
+    <button class="get">click</button>
+    <!-- <button class="def">reset</button> -->
+</body>
+</html>

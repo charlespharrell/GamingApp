@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .hover{
+            width: 100px;
+            padding: 50px 0;
+            line-height: 0;
+            margin: 80px auto;
+            /* height: 80px; */
+            border-radius: 50px;
+            background-color: blue;
+            transition: background 1s, transform 1s ease-in;
+        }
+        .hover:hover{
+           background: pink;
+           transform: rotateZ(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="hover"><div>Hover me</div> </div>
+</body>
+</html>

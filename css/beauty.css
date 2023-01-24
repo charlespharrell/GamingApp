@@ -1,0 +1,312 @@
+
+div .bp{
+    display: block;
+    text-align: center;
+    padding-top: 40px;
+    color: rgb(160, 222, 135);
+    font-weight: bolder;
+}
+
+div .bp .B{
+    color: red;
+}
+
+.con{
+    display: grid;
+    background-color: white;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    max-width: 100%;
+    margin: 0px;
+    max-height: 100%;
+    gap: 20px;
+    }
+
+.item-1{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+.item-1 .b1{
+    display: block;
+    max-width: 100%;
+    max-height: 50%;
+    background-color: rgb(30, 219, 206);
+    color: rgb(0, 10, 10);
+
+}
+
+
+.item-1 .b1 img{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+
+.item-1 .b1 a .tri{
+    font-size: larger;
+    font-weight: bold;
+    color: black;
+    display: inline-block;
+    padding: 30px;
+    
+}
+
+
+.item-1 .stand{
+    display: block;
+    max-width: 100%;
+    max-height: 50%;
+    background-color:rgb(248, 244, 244) ;
+    color:black ;
+    padding: 165px;
+    padding-top:10px;
+    padding-left: 10px;
+   
+
+}
+
+.stand .tristand{
+    color: green;
+}
+
+.stand .price{
+    color: grey;
+}
+
+.stand .amount{
+    color: red;
+}
+
+.item-2{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.item-2 .b2{
+    display: block;
+    max-width: 100%;
+    max-height: 50%;
+    background-color: rgb(30, 219, 206);
+    color: rgb(0, 10, 10);
+
+}
+
+
+.item-2 .b2 img{
+    display: inline-block;
+    padding: 10px;
+}
+
+.item-2 .b2 a .cera{
+    font-size: larger;
+    font-weight: bold;
+    color: black;
+    display: inline-block;
+    padding: 5px;
+    
+}
+
+.item-2 .ve{
+    display: block;
+    max-width: 100%;
+    max-height: 50%;
+    background-color:rgb(248, 244, 244);
+    color:black ;
+    padding: 165px;
+    padding-top:10px;
+    padding-left: 10px;
+   
+
+}
+
+
+.ve .cerave{
+    color: green;
+}
+
+.ve .price{
+    color: grey;
+}
+
+.ve .amount{
+    color: red;
+}
+
+.item-3{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.item-3 .b3{
+    display: block;
+    max-width: 100%;
+    max-height: 50%;
+    background-color: rgb(30, 219, 206);
+    color: rgb(0, 10, 10);
+
+}
+
+
+.item-3 .b3 img{
+    display: inline-block;
+    padding: 10px;
+}
+
+.item-3 .b3 a .hair{
+    font-size: larger;
+    font-weight: bold;
+    color: black;
+    display: inline-block;
+    padding: 5px;
+    
+}
+
+.item-3 .ve{
+    display: block;
+    max-width: 100%;
+    max-height: 50%;
+    background-color:rgb(248, 244, 244);
+    color:black ;
+    padding: 165px;
+    padding-top:10px;
+    padding-left: 10px;
+   
+
+}
+
+.item-4{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.item-4 .b4{
+    display: block;
+    max-width: 100%;
+    max-height: 50%;
+    background-color: rgb(30, 219, 206);
+    color: rgb(0, 10, 10);
+
+}
+
+
+.item-4 .b4 img{
+    display: inline-block;
+    padding: 10px;
+}
+
+.item-4 .b4 a .john{
+    font-size: larger;
+    font-weight: bold;
+    color: black;
+    display: inline-block;
+    padding-bottom: 15px;
+    
+}
+
+.item-4 .ve{
+    display: block;
+    max-width: 100%;
+    max-height: 50%;
+    background-color:rgb(248, 244, 244);
+    color:black ;
+    padding: 165px;
+    padding-top:10px;
+    padding-left: 10px;
+   
+
+}
+
+.item-5{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.item-5 .b5{
+    display: block;
+    max-width: 100%;
+    max-height: 50%;
+    background-color: rgb(30, 219, 206);
+    color: rgb(0, 10, 10);
+
+}
+
+
+.item-5 .b5 img{
+    display: inline-block;
+    padding: 10px;
+}
+
+.item-5 .b5 a .cantu{
+    font-size: larger;
+    font-weight: bold;
+    color: black;
+    display: inline-block;
+    padding-bottom: 15px;
+    
+}
+
+.item-5 .ve{
+    display: block;
+    max-width: 100%;
+    max-height: 50%;
+    background-color:rgb(248, 244, 244);
+    color:black ;
+    padding: 165px;
+    padding-top:10px;
+    padding-left: 10px;
+   
+
+}
+
+.item-6{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.item-6 .b6{
+    display: block;
+    max-width: 100%;
+    max-height: 50%;
+    background-color: rgb(30, 219, 206);
+    color: rgb(0, 10, 10);
+
+}
+
+
+.item-6 .b6 img{
+    display: inline-block;
+    padding: 10px;
+}
+
+.item-6 .b6 a .olay{
+    font-size: larger;
+    font-weight: bold;
+    color: black;
+    display: inline-block;
+    padding-bottom: 15px;
+    
+}
+
+.item-6 .ve{
+    display: block;
+    max-width: 100%;
+    max-height: 50%;
+    background-color:rgb(248, 244, 244);
+    color:black ;
+    padding: 165px;
+    padding-top:10px;
+    padding-left: 10px;
+   
+
+}
+ .con img{
+margin: 5%;
+} 

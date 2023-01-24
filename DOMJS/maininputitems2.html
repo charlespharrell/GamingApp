@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label id="lab">Input your item: </label>
+    <input type="search" id="inp" placeholder="please enter your item"><br><br>
+    <div id="divv">
+        <button id="btn" onclick="add()">Search</button>
+        <button id="total" onclick="total()">Total</button><br><br>
+    </div>
+    <hr><br>
+    <span>Item(s):</span>
+    <span>Price(s):</span><br><br>
+    <div id="result">Total is: </div>
+
+    <script>
+        let Items =                
+            milo = {
+                name: 'milo',
+                price: 2000
+            },
+            milk ={
+                name: 'milk',
+                price: 1400
+            },
+            bread ={
+                name: 'bread',
+                price: 1300
+            }                
+                               
+        let varItem =[]
+
+        function add(){
+            let list = document.getElementById('inp').value.toLowerCase();
+            let div = document.getElementById('divv')
+            
+            if( list === 'milo'){
+            varItem.push = Number(milo.price)
+            let labe = document.createElement('label')
+            let spa = document.createElement('span')
+            labe.innerText = `${milo.name}:  `
+            spa.innerHTML = milo.price
+            document.body.appendChild(labe)
+            document.body.appendChild(spa)
+            let br = document.createElement('br')
+            document.body.appendChild(br)
+            }
+            else if( list === 'milk'){
+            varItem.push = Number(milk.price)
+            let labe = document.createElement('label')
+            let spa = document.createElement('span')
+            labe.innerText = `${milk.name}:  `
+            spa.innerHTML = milk.price
+            document.body.appendChild(labe)
+            document.body.appendChild(spa)
+            let br = document.createElement('br')
+            document.body.appendChild(br)
+            }
+            else if( list === 'bread'){
+            varItem.push = Number(bread.price)
+            let labe = document.createElement('label')
+            let spa = document.createElement('span')
+            labe.innerText = `${bread.name}:  `
+            spa.innerHTML = bread.price
+            document.body.appendChild(labe)
+            document.body.appendChild(spa)
+            let br = document.createElement('br')
+            document.body.appendChild(br)
+            }
+            else if(list === ''){
+            let pls = document.createElement('label')
+            pls.innerText = 'Please enter a product'
+            document.body.appendChild(pls)
+            let br = document.createElement('br')
+            document.body.appendChild(br)
+            }
+            else{
+            let pls = document.createElement('label')
+            pls.innerText = 'we dont have this product'
+            document.body.appendChild(pls)
+            let br = document.createElement('br')
+            document.body.appendChild(br)
+            }            
+            }
+            function total() {
+            let result = document.querySelector('#result')
+            let count = varItem.reduceRight(function(a, b) {    
+            return a + b;
+            });
+            document.getElementById(result).innerHTML=`${count} `  
+            }
+        
+    </script>
+
+</body>
+</html>

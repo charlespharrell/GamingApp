@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="exam">
+        <a href="www.netninja.co.uk">The net ninja website</a>
+
+        <p class="par">
+            Lorem ipsum dolor sit.
+        </p>
+    </div>
+
+    <script>
+        const link = document.querySelector('a')
+        
+        console.log(link.getAttribute('href'))
+       
+        link.setAttribute('href','www.google.com')
+        link.innerText = `The Google website`
+
+        const came = document.querySelector('p')
+        console.log(came.getAttribute("class"))
+        came.setAttribute('class', 'party')
+        came.setAttribute('style', 'color:tan')
+       
+
+    </script>
+</body>
+</html>

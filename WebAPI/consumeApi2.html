@@ -1,0 +1,296 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        background-color: rgb(11, 11, 11);
+        display: block;
+    }
+    th:nth-child(even){
+    background-color: hsl(10, 79%, 65%);
+    padding: 20px;
+    
+    }
+    th:nth-child(odd){
+        background-color: hsl(186, 34%, 60%);
+    }
+    tr:nth-child(even){
+        background-color: hsl(10, 79%, 65%); 
+    }
+    tr:nth-child(odd){
+        background-color: hsl(186, 34%, 60%)
+    }tr{
+        text-align: center;
+        
+    }
+    </style>
+</head>
+<body>
+    <div id="dt"></div>
+    <table>
+        <tr>
+            <th id="fname">firstname</th>
+            <th id="lastname">lastname</th>
+            <th id="address">Address</th>
+            <th id="age">Age</th>
+            <th id="Dob">Dob</th>
+            <th id="contact">Contact</th>
+           <th id="email">Email</th>
+            <th id="salary">salary</th>
+            <th id="image">image</th>
+            <th id="id">id</th>
+        </tr>
+        <tr>
+            <td id="rfname"></td>
+            <td id="rlname"></td>
+            <td id="raddress"> </td>
+            <td id="rage"></td>
+            <td id="rdob"></td>
+            <td id="rcontact"></td>
+            <td id="remail"></td>
+            <td id="rsalary"></td>
+            <td id="rimage"></td>
+            <td id="rid"></td>
+        </tr>
+        <tr>
+            <td id="rfname1"></td>
+            <td id="rlname1"></td>
+            <td id="raddress1"> </td>
+            <td id="rage1"></td>
+            <td id="rdob1"></td>
+            <td id="rcontact1"></td>
+            <td id="remail1"></td>
+            <td id="rsalary1"></td>
+            <td id="rimage1"></td>
+            <td id="rid1"></td>
+        </tr>
+        <tr>
+            <td id="rfname2"></td>
+            <td id="rlname2"></td>
+            <td id="raddress2"> </td>
+            <td id="rage2"></td>
+            <td id="rdob2"></td>
+            <td id="rcontact2"></td>
+            <td id="remail2"></td>
+            <td id="rsalary2"></td>
+            <td id="rimage2"></td>
+            <td id="rid2"></td>
+        </tr>
+        <tr>
+            <td id="rfname3"></td>
+            <td id="rlname3"></td>
+            <td id="raddress3"> </td>
+            <td id="rage3"></td>
+            <td id="rdob3"></td>
+            <td id="rcontact3"></td>
+            <td id="remail3"></td>
+            <td id="rsalary3"></td>
+            <td id="rimage3"></td>
+            <td id="rid3"></td>
+        </tr>
+        <tr>
+            <td id="rfname4"></td>
+            <td id="rlname4"></td>
+            <td id="raddress4"> </td>
+            <td id="rage4"></td>
+            <td id="rdob4"></td>
+            <td id="rcontact4"></td>
+            <td id="remail4"></td>
+            <td id="rsalary4"></td>
+            <td id="rimage4"></td>
+            <td id="rid4"></td>
+        </tr>
+
+        <tr>
+            <td id="rfname5"></td>
+            <td id="rlname5"></td>
+            <td id="raddress5"> </td>
+            <td id="rage5"></td>
+            <td id="rdob5"></td>
+            <td id="rcontact5"></td>
+            <td id="remail5"></td>
+            <td id="rsalary5"></td>
+            <td id="rimage5"></td>
+            <td id="rid5"></td>
+        </tr>
+
+        <tr>
+            <td id="rfname6"></td>
+            <td id="rlname6"></td>
+            <td id="raddress6"> </td>
+            <td id="rage6"></td>
+            <td id="rdob6"></td>
+            <td id="rcontact6"></td>
+            <td id="remail6"></td>
+            <td id="rsalary6"></td>
+            <td id="rimage6"></td>
+            <td id="rid6"></td>
+        </tr>
+
+        <tr>
+            <td id="rfname7"></td>
+            <td id="rlname7"></td>
+            <td id="raddress7"> </td>
+            <td id="rage7"></td>
+            <td id="rdob7"></td>
+            <td id="rcontact7"></td>
+            <td id="remail7"></td>
+            <td id="rsalary7"></td>
+            <td id="rimage7"></td>
+            <td id="rid7"></td>
+        </tr>
+
+        <tr>
+            <td id="rfname8"></td>
+            <td id="rlname8"></td>
+            <td id="raddress8"> </td>
+            <td id="rage8"><td>
+            <td id="rdob8"></td>
+            <td id="rcontact8"></td>
+            <td id="remail8"></td>
+            <td id="rsalary8"></td>
+            <td id="rimage8"></td>
+            <td id="rid8"></td>
+        </tr>
+
+        <tr>
+            <td id="rfname9"></td>
+            <td id="rlname9"></td>
+            <td id="raddress9"> </td>
+            <td id="rage9"></td>
+            <td id="rdob9"></td>
+            <td id="rcontact9"></td>
+            <td id="remail9"></td>
+            <td id="rsalary9"></td>
+            <td id="rimage9"></td>
+            <td id="rid9"></td>
+        </tr>
+    </table>
+    <script>
+        const endpoint = 'https://hub.dummyapis.com/employee'
+
+        fetch(endpoint)
+        .then((response)=>response.json())
+        .then((employee)=>{
+            console.log(employee)
+            document.getElementById('raddress').innerHTML = employee[0].address;
+            document.getElementById('rage').innerHTML = employee[0].age;
+            document.getElementById('rdob').innerHTML = employee[0].dob;
+            document.getElementById('rcontact').innerHTML = employee[0].contactNumber;
+            document.getElementById('rfname').innerHTML = employee[0].firstName;
+            document.getElementById('rlname').innerHTML = employee[0].lastName;
+            document.getElementById('rimage').innerHTML = employee[0].imageUrl;
+            document.getElementById('rsalary').innerHTML = employee[0].salary;
+            document.getElementById('rid').innerHTML = employee[0].id;
+            document.getElementById('remail').innerHTML = employee[0].email
+            
+            document.getElementById('raddress1').innerHTML = employee[1].address;
+            document.getElementById('rage1').innerHTML = employee[1].age;
+            document.getElementById('rdob1').innerHTML = employee[1].dob;
+            document.getElementById('rcontact1').innerHTML = employee[1].contactNumber;
+            document.getElementById('rfname1').innerHTML = employee[1].firstName;
+            document.getElementById('rlname1').innerHTML = employee[1].lastName;
+            document.getElementById('rimage1').innerHTML = employee[1].imageUrl;
+            document.getElementById('rsalary1').innerHTML = employee[1].salary;
+            document.getElementById('rid1').innerHTML = employee[1].id;
+            document.getElementById('remail1').innerHTML = employee[1].email
+
+            document.getElementById('raddress2').innerHTML = employee[2].address;
+            document.getElementById('rage2').innerHTML = employee[2].age;
+            document.getElementById('rdob2').innerHTML = employee[2].dob;
+            document.getElementById('rcontact2').innerHTML = employee[2].contactNumber;
+            document.getElementById('rfname2').innerHTML = employee[2].firstName;
+            document.getElementById('rlname2').innerHTML = employee[2].lastName;
+            document.getElementById('rimage2').innerHTML = employee[2].imageUrl;
+            document.getElementById('rsalary2').innerHTML = employee[2].salary;
+            document.getElementById('rid2').innerHTML = employee[2].id;
+            document.getElementById('remail2').innerHTML = employee[2].email
+
+            document.getElementById('raddress3').innerHTML = employee[3].address;
+            document.getElementById('rage3').innerHTML = employee[3].age;
+            document.getElementById('rdob3').innerHTML = employee[3].dob;
+            document.getElementById('rcontact3').innerHTML = employee[3].contactNumber;
+            document.getElementById('rfname3').innerHTML = employee[3].firstName;
+            document.getElementById('rlname3').innerHTML = employee[3].lastName;
+            document.getElementById('rimage3').innerHTML = employee[3].imageUrl;
+            document.getElementById('rsalary3').innerHTML = employee[3].salary;
+            document.getElementById('rid3').innerHTML = employee[3].id;
+            document.getElementById('remail3').innerHTML = employee[3].email
+            document.getElementById('raddress').innerHTML = employee[0].address;
+
+            document.getElementById('raddress4').innerHTML = employee[4].address;
+            document.getElementById('rage4').innerHTML = employee[4].age;
+            document.getElementById('rdob4').innerHTML = employee[4].dob;
+            document.getElementById('rcontact4').innerHTML = employee[4].contactNumber;
+            document.getElementById('rfname4').innerHTML = employee[4].firstName;
+            document.getElementById('rlname4').innerHTML = employee[4].lastName;
+            document.getElementById('rimage4').innerHTML = employee[4].imageUrl;
+            document.getElementById('rsalary4').innerHTML = employee[4].salary;
+            document.getElementById('rid4').innerHTML = employee[4].id;
+            document.getElementById('remail4').innerHTML = employee[4].email
+
+            document.getElementById('raddress5').innerHTML = employee[5].address;
+            document.getElementById('rage5').innerHTML = employee[5].age;
+            document.getElementById('rdob5').innerHTML = employee[5].dob;
+            document.getElementById('rcontact5').innerHTML = employee[5].contactNumber;
+            document.getElementById('rfname5').innerHTML = employee[5].firstName;
+            document.getElementById('rlname5').innerHTML = employee[5].lastName;
+            document.getElementById('rimage5').innerHTML = employee[5].imageUrl;
+            document.getElementById('rsalary5').innerHTML = employee[5].salary;
+            document.getElementById('rid5').innerHTML = employee[5].id;
+            document.getElementById('remail5').innerHTML = employee[5].email
+
+            document.getElementById('raddress6').innerHTML = employee[6].address;
+            document.getElementById('rage6').innerHTML = employee[6].age;
+            document.getElementById('rdob6').innerHTML = employee[6].dob;
+            document.getElementById('rcontact6').innerHTML = employee[6].contactNumber;
+            document.getElementById('rfname6').innerHTML = employee[6].firstName;
+            document.getElementById('rlname6').innerHTML = employee[6].lastName;
+            document.getElementById('rimage6').innerHTML = employee[6].imageUrl;
+            document.getElementById('rsalary6').innerHTML = employee[6].salary;
+            document.getElementById('rid6').innerHTML = employee[6].id;
+            document.getElementById('remail6').innerHTML = employee[6].email
+
+            document.getElementById('raddress7').innerHTML = employee[7].address;
+            document.getElementById('rage7').innerHTML = employee[7].age;
+            document.getElementById('rdob7').innerHTML = employee[7].dob;
+            document.getElementById('rcontact7').innerHTML = employee[7].contactNumber;
+            document.getElementById('rfname7').innerHTML = employee[7].firstName;
+            document.getElementById('rlname7').innerHTML = employee[7].lastName;
+            document.getElementById('rimage7').innerHTML = employee[7].imageUrl;
+            document.getElementById('rsalary7').innerHTML = employee[7].salary;
+            document.getElementById('rid7').innerHTML = employee[7].id;
+            document.getElementById('remail7').innerHTML = employee[7].email
+
+            document.getElementById('raddress8').innerHTML = employee[8].address;
+            document.getElementById('rage8').innerHTML = employee[8].age;
+            document.getElementById('rdob8').innerHTML = employee[8].dob;
+            document.getElementById('rcontact8').innerHTML = employee[8].contactNumber;
+            document.getElementById('rfname8').innerHTML = employee[8].firstName;
+            document.getElementById('rlname8').innerHTML = employee[8].lastName;
+            document.getElementById('rimage8').innerHTML = employee[8].imageUrl;
+            document.getElementById('rsalary8').innerHTML = employee[8].salary;
+            document.getElementById('rid8').innerHTML = employee[8].id;
+            document.getElementById('remail8').innerHTML = employee[8].email
+
+            document.getElementById('raddress9').innerHTML = employee[9].address;
+            document.getElementById('rage9').innerHTML = employee[9].age;
+            document.getElementById('rdob9').innerHTML = employee[9].dob;
+            document.getElementById('rcontact9').innerHTML = employee[9].contactNumber;
+            document.getElementById('rfname9').innerHTML = employee[9].firstName;
+            document.getElementById('rlname9').innerHTML = employee[9].lastName;
+            document.getElementById('rimage9').innerHTML = employee[9].imageUrl;
+            document.getElementById('rsalary9').innerHTML = employee[9].salary;
+            document.getElementById('rid9').innerHTML = employee[9].id;
+            document.getElementById('remail9').innerHTML = employee[9].email
+        })
+        
+        // turing.contactNumber
+        // remote.io
+    </script>
+    
+</body>
+</html>

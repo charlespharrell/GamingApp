@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <select name="selectt"id="selectt">
+        <option value="select" id="select">Please select a currency</option>
+        <option value="dollar" id="dollar">Dollar</option>
+        <option value="pound" id="pound">Pound</option>
+        <option value="euro" id="euro">Euro</option>
+    </select><br><br>
+
+    <label for="currency">Currency:</label>
+    <input type="number" name="currency" id="Currency"><br><br>
+
+
+    <label for="naira" >Naira:</label>
+    <input type="number" name="naira" id="naira">
+    
+<button id="btn">Convert</button>
+<div id="rate" > </div>
+
+<script>
+
+    let btn = document.querySelector('#btn')
+    btn.addEventListener('click', convert)
+    function convert(){
+        let selectt= document.querySelector("#selectt")
+        let select = document.querySelector('#select')
+        let currency = document.querySelector('#currency').value
+        let dollar = document.querySelector('#dollar')
+        let pound = document.querySelector('#pound')
+        let euro = document.querySelector('#euro')
+        let naira = document.querySelector('#naira')
+        let rate= document.querySelector('#rate')
+
+        naira =0
+        if (selectt === dollar){
+            naira = currency * 600;
+        }
+        else if( select=pound){
+            naira = currency*700;
+        }
+        else if (select =euro){
+            naira = currency *800;
+        }
+        else
+        document.getElementsById('rate').innerHTML = `Not a value`
+        // document.writeln(`There is no value`)
+
+        }
+       
+    
+
+    // }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,254 @@
+body{
+    background-color:hsl(27, 66%, 92%);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    width: 25%;
+    margin: 10% auto;
+    max-width: 100%;
+    height: 7vh;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 10px;
+    padding: 15px;
+}
+.mybal{
+    float: left;
+}
+.my{
+    color: white;
+    font-size: xx-small;
+    margin-bottom: 7px;
+    font-family:sans-serif ;
+    margin-left: -10px;
+}
+.bal{
+    color: white;
+    font-weight: bold;
+    font-size: large;   
+}
+.Bcircle{
+    height: 30px;
+    width: 30px;
+    margin-top: 5px;
+    border-radius: 50%;
+    background-color:hsl(25, 47%, 15%);
+    margin-left: 300px;
+}
+.wcircle{
+    height: 30px;
+    width: 30px;
+    margin-left: 280px;
+    margin-top: -32px;
+    z-index: 1;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color:none;
+}
+.container{
+    width: 25%;
+    margin: 10% auto;
+    max-width: 100%;
+    height: 45vh;
+    background-color: hsl(33, 100%, 98%);
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: -120px;
+    padding: 20px;
+}
+.spend{
+    float: left;
+    color:hsl(25, 47%, 15%);
+    font-weight: bolder;
+    font-size: 20;
+    font-family: sans-serif;
+}
+ .bars{
+    position: relative;
+    margin: 25px auto ;
+    width: 100%;
+    height: 50%;
+    border: 1px solid hsl(33, 100%, 98%);
+    z-index: 0;
+} 
+ .bar{
+    width: 35px;
+    height: 25%;
+    position: absolute;  
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 5px;
+    margin: 0 10px;
+    bottom: 10px;
+    z-index: 100;  
+}.ba{
+    position: absolute;
+    bottom: 0px;
+    margin: -7px 10px;
+    font-weight: lighter;
+}
+.res{
+    position: absolute;
+    width: 40px;
+    height: 15%;
+    background-color: hsl(25, 47%, 15%);
+    border-radius: 5px;
+    top: 75px;
+    margin-left: 7px;
+    padding-top: 2px;
+    color: white;
+    font-size: small;
+    font-weight: lighter;
+    display: none;
+}
+.restue{
+    width: 40px;
+    height: 15%;
+    display: none;
+    top: 35px; 
+    margin-left: 52px;
+}
+.reswed{
+    width: 40px;
+    height: 15%;
+    display: none;
+    top: 0px; 
+    margin-left: 97px; 
+}
+.resthu{
+    width: 40px;
+    height: 15%;
+    top: 35px; 
+    display: none;
+    margin-left: 142px;
+}
+.resfri{
+    width: 40px;
+    height: 15%;
+    top: 57px; 
+    display: none;
+    margin-left: 187px;
+}
+.ressat{
+    width: 40px;
+    height: 15%;
+    top: 18px;
+    display: none; 
+    margin-left: 232px;
+}
+.ressun{
+    width: 40px;
+    height: 15%;
+    top: 55px; 
+    display: none;
+    margin-left: 277px;
+}
+.two{
+    height: 50%;
+    width: 35px;
+    margin-left:  55px
+}
+.tue{
+    margin-left:  60px 
+}
+.three{
+    width: 35px;
+    height: 75%;
+    margin-left: 100px;
+    background-color: hsl(10, 79%, 65%);
+}
+.wed{
+    margin-left: 105px;
+}
+.four{
+    width: 35px;
+    height: 50%;
+    margin-left: 145px;
+}
+.thu{
+    margin-left:150px ;
+}
+.five{
+    width: 35px;
+    height: 37%;
+    margin-left: 190px;
+}
+.fri{
+    margin-left: 199px;
+}
+.six{
+    width: 35px;
+    height: 63%;
+    margin-left: 235px;
+}
+.sat{
+    margin-left:240px ;
+}
+.seven{
+    width: 35px;
+    height: 37%;
+    margin-left: 280px;
+}
+.sun{
+    margin-left: 285px;
+}
+.Tamount{
+    float: left;
+    margin-top: 10px;
+}
+.total{
+    font-size: x-small;
+    font-weight: lighter;
+    margin-left: -10px;
+    margin-bottom: 5px;
+}
+.amount{
+    font-size: x-large;
+    color:hsl(25, 47%, 15%);
+    font-weight: 1000;
+}
+.fper{
+    float: right;
+    margin-top: 25px;
+}
+.percent{
+    font-size: x-small;
+    margin-right: -33px; 
+    font-weight: bolder;  
+    margin-bottom: 0px;
+    color:hsl(25, 47%, 15%);
+}
+.from{
+    font-size: x-small;
+    margin-right: 0px; 
+    font-weight: lighter;   
+}
+ @media screen and (max-width: 375px){
+    body{
+        margin: 130px auto;
+        /* background-color: black; */
+    }
+    .header{
+        margin-top: 70px;
+        background-color: black;
+    }
+    .container{
+        width: 70%;
+        max-width: 100%;
+        height: 65vh;
+    }
+    .bars{
+    height: 40vh;
+    /* border: 1px solid black; */
+    margin-left: -15px;
+    }
+    .spend{
+    padding-top: -60px;
+    position: absolute;
+    font-size: 25px;
+    }
+}.bar:hover{
+    background-color: hsl(186, 34%, 60%);
+    /* position: absolute;
+    bottom: 5px; */
+}

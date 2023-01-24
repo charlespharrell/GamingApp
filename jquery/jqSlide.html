@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="./jquery.min.js"></script>
+    <script>
+        $(document).ready(
+            function(){
+                $('.btn-up').click(
+                    function(){
+                        $('div').slideUp(300);
+                    }
+
+                )
+                $('.btn-down').click(
+                    function(){
+                        $('div').slideDown(10000);
+                    }
+                )
+            }
+        )
+    //     $(document).ready(
+    //         function(){
+                
+    //         }
+    //     )
+    // </script>
+    <style>
+        div{
+            border: 2px solid green;
+            background-color: goldenrod;
+            padding: 5px;
+            width: 500px;
+            height: 55px;
+            margin-bottom: 20px;
+            margin-top: 80px;
+        }
+    </style>
+</body>
+<button class="btn-up">Slide Up</button>
+<button class="btn-down">Slide Down</button>
+<div>I am sliding up</div>
+<div>I am sliding down</div>
+</html>

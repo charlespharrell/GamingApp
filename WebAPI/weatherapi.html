@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ 
+const search = document.getElementById('citysearch')
+let temp= document.getElementById('temp')
+
+search.addEventListener('input', (e)=>{
+    console.log(e)
+})
+// const value = e.target.value
+// console.log(value)
+    // const value = e.target.value 
+    // const end = 'https://api.openweathermap.org/data/2.5/weather?id={search}&appid={7e2b26d93123f09d078df7469c5ae5d5}'
+    // const endd = 'https://api.openweathermap.org/data/2.5/weather?q=lagos&appid=7e2b26d93123f09d078df7469c5ae5d5'
+    // const key = '7e2b26d93123f09d078df7469c5ae5d5'
+    // const endpoint =`https://api.openweathermap.org/data/2.5/weather?q=london&appid=7e2b26d93123f09d078df7469c5ae5d5`
+    
+    //    fetch(endpoint)
+    //     .then((response)=>response.json())
+    //     .then((data)=>{
+    //         // const card = temp.content.cloneNode(true)
+    //             console.log(data)
+    //         }
+    //     )
+    </script>
+    <label for="citysearch" class="citysearch">city</label>
+    <input type="search" id="citysearch">
+
+    <div class="city"></div>
+    <template id="temp">
+        <div class="city">hey</div>
+    </template>
+</body>
+</html>

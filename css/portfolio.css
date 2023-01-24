@@ -1,0 +1,140 @@
+ body .head{
+
+    display: block;
+    position: fixed;
+    background-color: rgb(68, 68, 117);
+    max-width: 100%;
+    width: 1800px;
+    height: 60px;
+    top: 0;
+    left: 0;
+    z-index: 1;  
+}
+
+.head .bar{
+    list-style: none;
+}
+ 
+ .head .bar #line{
+     position: absolute;
+     display: inline-block;
+    top: 15px;
+      
+}    
+
+.head .head2{
+    display: flex;
+    float: right;
+  list-style: none;
+  margin-top: 8px;
+  
+ 
+}
+
+.head .head2 li a{
+    color: white;
+    margin-inline-end: 30px;
+    text-decoration: none;   
+}
+
+.name{
+    background-color: rgb(32, 22, 22);
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    width: 1800px;
+    height: 420px;
+    top: 50px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    padding-top: 170px;
+    color: white;
+}
+.name h1{
+    font-size: 50px;
+}
+.name em{
+    font-size: 30px;
+}
+
+.p1{
+    display: block;
+    background-color: gray;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 630px;
+    height: 1250px;
+}
+.p1 span{
+    display: block;
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+    font-size: 25px;
+}
+
+.p1 hr{
+    width: 600px;
+    height: 3px;
+    background-color: white;
+}
+
+.project{
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+   
+
+}
+.project li{
+    display: inline-block;
+    margin: 20px;
+    margin-left: 0px;
+    
+}
+.show{
+    text-align: center;
+    display: inline-block;
+    border: 1px solid rgb(20, 20, 20); 
+    background-color: rgb(68, 68, 117);;
+    color: white;
+    width: 150px;
+    height: 30px;
+    padding-bottom: 18px;
+}
+.let{
+    text-align: center;
+    display: block;
+    color: white;
+    background-color: rgb(32, 22, 22); 
+    margin-top: 80px;
+    height: 900px;
+}
+ .let .hr1{
+    display: block;
+    max-width: 100%;
+    border: 1px solid rgb(68, 68, 117);
+    background-color: rgb(68, 68, 117);
+     width: 1700px; 
+    height: 3px;
+} 
+ .social li a{
+    text-decoration: none;
+    color: white;
+}
+footer .copy{
+    float: left;
+    margin-left: 50px;
+    font-size:25px;
+}
+footer .site{
+    display: block;
+   float: right;
+    font-size: 25px;
+    margin-top: 2px;
+  /* top: 20;
+  right: 1000; */
+}

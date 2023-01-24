@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Employee{
+            constructor(name, age, salary){
+                this.Name =name;
+                this.Age= age;
+                this.Sal = salary;
+                
+            }
+            getInfo(){
+                return `My name is ${this.Name} and my age is ${this.Age} and your salary is ${this.Sal}`
+            
+            }
+        }
+        let doc = new Employee('John',23, 4000000)
+        // doc.Name ='charles'
+        // doc.position ='sen dev' 
+        console.log(doc.getInfo())
+        </script>
+</body>
+</html>

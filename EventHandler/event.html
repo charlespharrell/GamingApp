@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var image = null;
+        function init(){
+          image=  document.getElementById('mail')
+            image.style.position = 'relative';
+            image.style.left= '200px'
+            image.style.top ='200px'  
+        }   
+        function ChangePost(){
+            image.style.left =parseInt(
+            image.style.left
+            )+200 + 'px';
+        }
+        function ChangePost2(){
+            image.style.left =parseInt(
+            image.style.left
+            )-200 + 'px';
+        }
+        function ChangePost3(){
+            image.style.top =parseInt(
+            image.style.top
+            )-100 + 'px';
+        }
+        function ChangePost4(){
+            image.style.top =parseInt(
+            image.style.top
+            )+100 + 'px';
+        }
+            window.onload = init;      
+    </script>
+</head>
+<body>
+    <form action="">
+        <img src="/html/image/mail.png" alt="mail" id="mail">
+        <center>
+            <input type="button" value="right" onclick="ChangePost()">
+            <input type="button" value="left" onclick="ChangePost2()">
+            <input type="button" value="top" onclick="ChangePost3()">
+            <input type="button" value="bottom" onclick="ChangePost4()">
+        </center>
+    </form>
+</body>
+</html>

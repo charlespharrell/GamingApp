@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
+    <script>
+    //   var charles = ('ul')
+    //             var me = ('<div class="clas">')
+                
+        $(document).ready(
+            function(){
+                var wrapped = true
+            // $('.lass').css({color:'blue', fontSize:'bolder', backgroundColor:'yellow',display:'inline-block'})
+            // $('ul li:last').css({color:'red'})
+            // $('.lass ul:last-child').css({color:'pink',backgroundColor:'black'})
+            // $('.lass ul li:even').css({color:'pink',backgroundColor:'black'})
+            // $(".lass li:lt(3)").css({color:'pink',backgroundColor:'black'})
+            // $('ul:not("li:even")').css({color:'pink'})
+            // $(".lass li:lt(2)").css({color:'pink',backgroundColor:'yellow'})
+            // $('div[class]').css({color:'pink'})
+            // $('ul').children().css({color:'pink'})
+            // $('ul').parent().css({color:'pink'})
+            // $('ul').next().css({color:'pink'})
+            // $('ul').prev().css({color:'pink'})
+            // $('.lass').find('.me').css({color:'pink'})
+            // $('.lass').prepend(tweet)
+            // $('.lass').append(tweet)
+            // $('.lass').html(tweet)
+            // $('.lass').prepend(tweet)
+            // $('.lass').prepend(tweet)
+
+            // $('.how').empty()
+            // $('ul').wrap('<section>') 
+                
+                // var how = ('.how')
+            $('.how').click(function(){
+                    if (wrapped){
+                        $('ul li').text("I am Charles Pharrell") 
+                        $('.clas').text("De creme de la creme")
+                        wrapped = false;
+                        $('.how').text ('Front End Web Developer')
+
+                    }
+                    else{
+                        
+                        wrapped = true;
+                        $('.how').text ('CharlesPharrell')
+
+                    }
+                    
+                })
+        
+        })
+    </script>
+</head>
+<body>
+    <div class="how" style="text-align: center; display: block; background-color: lightcoral; padding: 20px;">Charlespharrell</div>
+    <div class="lass" style="background-color: gray;">
+    <div class="lor">Lorem, ipsum dolor.</div>
+    <ul>
+        <li>Lorem, ipsum.</li>
+        <li class="me">Lorem ipsum dolor sit amet consectetur.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae.</li>
+        <li>klsdjdkbjsbd</li>
+    </ul>
+    <p>fyjsn  suosvoj</p>
+    <div class="clas">Lorem ipsum dolor sit amet.</div>
+</div>
+</body>
+</html>

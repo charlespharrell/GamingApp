@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name = prompt('Please enter your name') 
+        let amount = Number(prompt('Please enter the amount purchased'))
+        let discount = 95/100 * amount;
+        let customer = 50;
+        let years = Number(prompt('Please enter the number of years'))
+
+        var w = new Date();
+        for(i=0; i<=customer; i++)
+        {
+            if(years >=10 && amount>=1000000){
+
+            
+
+            document.writeln(` Mr/Mrs ${name}, The total amount of goods bought is $ ${amount}, 
+            but you qaulify for our discount, Hence to pay $ ${discount} ${w.toLocaleString()}`)
+            document.writeln(`<br>`)
+            ducument.writeln(` Payment made at ${w.toLocaleString()}`)
+            } 
+
+            else if(years >=10 && amount<1000000){
+                document.writeln('Sorry sir, we encourage that your purchase more goods to get our discount')
+
+            }
+            else if( years<10 && amount >= 1000000){
+                document.writeln('Sir, you are not eligible for the discount. We duely apologise')
+            }
+
+            else{
+            document('You dont qualify in any way')
+        }
+        }
+        
+            
+           
+
+        
+        
+
+
+    </script>
+</body>
+</html>

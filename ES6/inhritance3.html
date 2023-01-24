@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Gadget{
+            constructor(model, price, name){
+                this.Model = model;
+                this.Price = price;
+                this.Name = name;
+
+            }
+            getGadgetInfo(){    
+                return ``
+            }
+        }
+        class Phone {
+        constructor (RAM, CPU, battery){
+                this.RAM = RAM;
+                this.CPU = CPU;
+                this.Battery = battery
+            }
+            getPhoneInfo(){
+                // return  ` the RAM of the phone is ${this.RAM}, and the processor is ${this.CPU}, and the battery capacity is ${this.Battery}`
+            }
+        }
+        class Television extends (Gadget, Phone) {
+            constructor(model, price, name,RAM, CPU, battery, screensize, screentype, resolution){
+                super(model, price, name, RAM, CPU, battery);
+                this.Size = screensize;
+                this.Type = screentype;
+                this.Resolution = resolution;
+            }
+            getTeleInfo(){
+                return `the model is ${this.Model}, and the price is ${this.Price}, and the name is ${this.Name}, the size of the screen is ${this.CPU} inches, and the type is ${this.Type}.the resolution is ${this.Resolution},`
+            }
+        }
+        const Tele = new Television('LG', 7000 ) 
+        console.log(Tele.getTeleInfo( ))
+
+        // class Phone{
+       
+
+        // class Gadget  extends(Television, Phone) {
+        //     constructor(model, price, name){
+        //         super( screentype, resolution,RAM, CPU, Battery)
+        //         this.Model = model;
+        //         this.Price = price;
+        //         this.Name = name;
+
+        //     }
+        //     getGadgetInfo(){ 
+        //         return ` the size of the screen is ${this.Size} inches, and the type is ${this.Type}.the resolution is ${this.Resolution}, model is ${this.Model}, and the price is ${this.Price}, and the name is ${this.Name} 
+        //         the RAM of the phone is ${this.RAM} gb, and the processor is ${this.CPU}, and the battery capacity is ${this.Battery}mah`
+
+        //     }
+        // }
+        // const Gadgets = new Gadget(80, 'LED', '1000', 8, 5, 4000, 'intel', 200000, 'HP')
+        // console.log(Gadgets.getGadgetInfo())
+        
+    </script>
+</body>
+</html>

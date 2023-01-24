@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Lorem, ipsum dolor.</h1>
+        <ul id="items">
+            <li class="item">charles</li>
+            <li class="item">pharrell</li>
+            <li class="item">udenwoke</li>
+        </ul> 
+
+        <span>Web Engineer</span>
+    </div>
+
+    <script>
+        let vary = document.createElement('div')
+        vary.className='hello'
+        vary.setAttribute('id','hey')
+        vary.textContent=`I am Charles Pharrell`
+
+        let char = document.createTextNode('Web Enginner')
+        vary.appendChild(char)
+        console.log(vary)
+        let body = document.querySelector('body')
+        let container = document.querySelector('.container')
+        let h1 = document.querySelector('h1')
+
+        body.insertBefore(vary, container)
+            
+       
+    </script>
+</body>
+</html>

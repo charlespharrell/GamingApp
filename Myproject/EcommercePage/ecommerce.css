@@ -1,0 +1,243 @@
+.container{
+    background-color: white;
+    color: black;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    height: 60px;
+    width: 100%;
+}
+.list{
+    float: left;
+}
+.list ul{
+    margin-left: 160px;
+   display: flex;
+   list-style: none;
+   margin-top: 20px;
+}
+.list ul li{
+    margin-inline:5px;
+    text-align: center;
+    width: 80px;
+    height: 30px;
+    font-size: small;
+   
+}
+.list ul li:hover{
+   font-weight: bolder;
+   font-size:large;
+   font-family: sans-serif;
+}
+.cart{
+    float: right;
+    margin-right: 220px;
+}
+.cart svg{
+    margin-bottom:15px;
+    margin-right: 50px;
+}
+.cart img{
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+}
+hr{
+    width: 70%;
+    margin-top: 0px;
+}
+#empty{
+    display: none;
+    float: right;
+    margin-right: 180px;
+    border: 1px solid black;
+    box-shadow: black;
+    margin-top: -22px;
+    max-height: 40%;
+    height: 27vh; 
+    width: 18%;
+    background-color:white;
+    position: relative;
+    z-index: 1;
+}
+#empty2{
+   margin: 40px;
+    
+}
+#cart-shoe{
+    margin-top: -50px;
+    margin-left: -30px;
+}
+#fill{
+    margin-top: -40px;
+    margin-left: 15px;
+    font-size: 9px;
+    margin-bottom: 5px;
+}
+#cart-amount{
+    margin-left: 15px;
+    font-size: 11px;
+}
+#x{
+    margin-left: 58px;
+    font-size: 11px;
+    margin-top: -12px
+}
+#cart-times{
+    margin-left: 68px;
+    font-size: 11px;
+    margin-top: -12px
+}
+#total{
+    margin-left: 77px;
+    font-size: 11px;
+    margin-top: -12px;
+    font-weight: bold;
+}
+.cart2{
+    margin-top: 15px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+#check{
+    width: 140%;
+    height: 5vh;
+    border: none;
+    background-color: hsl(26, 100%, 55%);
+    margin-top: 19px;
+    margin-left: -35px;
+    border-radius: 5px;
+    color: white;
+}
+.hr{
+    margin-top: 20px;
+    width: 100%;
+    color: gray;
+}
+.empty2{
+    margin: 50px;
+    font-size: small;
+}
+.images{
+    width: 25%;
+    height: 25%;
+    /* background-color: aqua; */
+    margin-top: 50px;
+    margin-left: 270px;
+}
+.shoeimage img{
+    width:100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.images .smallshoes img{
+    width: 19.5%;
+    height: 19.5%;
+    border-radius: 10px;
+    margin-inline: 6px;
+}
+.images .smallshoes{
+    margin-left: 5px;
+    margin-top: 20px;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    /* background-color: blue; */
+}
+.sneakers{
+    width: 35%;
+    height: 40%;
+    /* background-color: aqua; */
+    float: right;
+    margin-top: -29%;
+    margin-right: 130px;
+}
+.scompany{
+    color: hsl(26, 100%, 55%);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.fall{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+.low{
+    font-size: small;
+    color: hsl(220, 14%, 75%);
+    width: 85%;
+    height: 70px;
+    line-height: 20px;
+    /* background-color: blueviolet; */
+}
+.amount .price{
+    font-weight: bolder;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.amount .percent{
+    color:hsl(26, 100%, 55%);
+    width: 35px;
+    height: 20px;
+    text-align: center;
+    background-color: hsl(25, 100%, 94%);
+    margin-left: 110px;
+    margin-top: -25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.mainamount{
+    font-size: small;
+    color:  hsl(220, 14%, 75%);
+    text-decoration: line-through;
+}
+.sign ul{
+    background-color: hsl(223, 64%, 98%);
+    list-style: none;
+    display: flex;
+    width: 70px;
+    height: 40px;
+}
+.sign ul li{
+    margin-left: -10px;
+    /* margin-inline: 0px; */
+    margin-top: 5px;
+}
+.sign ul .minus{
+    padding-right: 20px;
+    color: hsl(26, 100%, 55%);
+    font-weight: bold;
+    cursor: pointer;
+}
+.sign ul .plus{
+    margin-left: 20px;
+    color: hsl(26, 100%, 55%);
+    font-weight: bold;
+    cursor: pointer;
+}
+.add{
+    width: 45%;
+    height: 7vh;
+    background-color:  hsl(26, 100%, 55%) ;
+    margin-left: 120px;
+   margin-top: -60px;
+    border-radius: 10px;
+    border: none;
+}
+.add svg{
+    color: white;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+.add2{
+    margin-right: 40px;
+    float: right;
+    margin-top: 5px;
+    font-size: small;
+    color: white;
+    /* margin-top: -20px; */
+    /* padding-top:-10px ; */
+}

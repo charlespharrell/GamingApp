@@ -1,0 +1,120 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        function say(){
+            for(let i = 0; i<   5; i++)
+                console.log(i)            
+        }
+        say()
+
+        const person = {
+            name:'charles',
+            gender: 'male',
+            walk() {
+                console.log(this)
+            }
+        }
+
+        person.walk()
+        const walkk = person.walk.bind(person)
+        // console.log(walk)
+        walkk()
+         const square =(number)=>
+
+            number * number
+         
+         console.log(square(5))
+
+         const square2 = number=> number* number
+         
+         console.log(square2(3))
+
+         const jobs = [
+            {
+                id: 1,
+                isActive: true,
+            },
+            {
+                id: 1,
+                isActive: false,
+            },
+            {
+                id: 1,
+                isActive: true,
+            }
+         ]
+         jobs.filter(job=>{
+           console.log( job.isActive)
+         })
+
+         const person2 = {
+            talk(){
+                var self = this
+                setTimeout(()=>{
+                    console.log('age', self)
+                }, 1000)
+                
+            }
+         }
+         person2.talk()
+
+         const colors =['red','blue','green']
+         const items =colors.map(color =>
+
+         
+             `<li>${color}</li>` 
+                 
+         )
+         console.log(items)
+         
+         //object destructuring
+         const address = {
+            street: 'alaye',
+            city: 'lagos',
+            country: 'nigeria'
+
+         }
+        //  const str = address.street
+         const{ street:str, city:cty, country:ctry}= address
+         console.log(str, cty, ctry
+        )
+
+        //spread array
+        let first =[1,2,3]
+
+        let second = [2,4,3]
+        let combined = [...first,'snitch', ...second]
+        console.log(combined)
+
+        //classes
+
+        class Person{
+            constructor(name){
+
+                this.name = name
+                this.age = 25
+            }
+            walk(){
+                console.log('walk')
+            }
+        }
+        const person1 = new Person('charles')
+        person1.name
+        console.log(person1.name)
+    //   console.log(person.name)  
+    //   person.name = 'emeka'
+    //   console.log(person.name)
+    //   const targetMember= 'name'
+    //   person[targetMember.value]= "pharrell"
+    //   console.log(targetMember.value)
+
+    </script>
+</body>
+</html>

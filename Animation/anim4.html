@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+        width: 100px;
+            height: 100px;
+            background: purple;
+            -webkit-animation: myfirst 6s;
+            animation: myfirst 10s; 
+            position: relative;
+        }
+        @-webkit-keyframes myfirst{
+            0% {background: red; left: 0px; top: 0px;}
+            25% {background: rgb(220, 240, 42); left: 300px; top: 0px;}
+            50% {background: rgb(57, 6, 173); left: 300px; top: 200px;}
+            75% {background: rgb(23, 245, 108); left: 0px; top: 200px;}
+            100% {background: red; left: 0px; top: 0px;}
+        }
+        @keyframes myfirst{
+            0% {background: red; left: 0px; top: 0px;}
+            25% {background: rgb(220, 240, 42); left: 300px; top: 0px;}
+            50% {background: rgb(57, 6, 173); left: 300px; top: 200px;}
+            75% {background: rgb(23, 245, 108); left: 0px; top: 200px;}
+            100% {background: red; left: 0px; top: 0px;}
+
+        } 
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

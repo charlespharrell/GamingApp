@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function add(num1, num2){
+            return num1+num2
+        }
+        try{
+
+            let res = add(19,12)
+            console.log(res)
+        }
+        catch(e){
+            console.log('Add method is not defined')
+            console.log({name:e.name, message:e.message})
+        }
+    </script>
+</body>
+</html>

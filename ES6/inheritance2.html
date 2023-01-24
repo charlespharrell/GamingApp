@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Person {
+            constructor(name, age, address){
+                this.Name = name;
+                this.Age = age;
+                this.Address = address;
+
+            }
+
+            getPersonInfo(){
+                return `The name is ${this.Name}. He is ${this.Age} years old, and he lives at ${this.Address}`
+            }
+        }
+
+        class Employee extends (Person){
+            constructor( name, age, address, salary, grade){
+                super(name,age,address);
+                this.Salary = salary;
+                this.Grade = grade;
+            }
+            getPersonInfo(){
+                return `The name is ${this.Name}. He is ${this.Age} years old, and he lives at ${this.Address}.His salary is $${this.Salary} and he is the ${this.Grade}`
+            }
+        }
+      const DevEng = new Employee('Charles', 13, 'Lagos', 4000000, 'Ceo')
+      console.log(DevEng.getPersonInfo())
+    
+    </script>
+</body>
+</html>
